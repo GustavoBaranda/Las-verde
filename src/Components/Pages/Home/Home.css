@@ -1,0 +1,11 @@
+.titulo{
+text-align: center;
+height: 70vh;
+}
+
+@media screen and (max-width: 1100px) {
+.titulo h1 {
+    padding-top: 100px;
+   
+}
+}
