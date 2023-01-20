@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn-basic {
+  background-color: #089547;
+  border-color: #089547;
+  color: white;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 10px 50px;
+  transition: 1000ms;
+  cursor: pointer;
+  font-family: Poppins;
+
+  &:hover {
+    transition: 1000ms;
+    background-color: #08954762;
+    border-color: #08954762;
+  }
+}

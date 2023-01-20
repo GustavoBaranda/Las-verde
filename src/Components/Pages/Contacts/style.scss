@@ -1,0 +1,45 @@
+.contact-container {
+  background-color: rgba(225, 225, 225, 0.424);
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding-bottom: 50px;
+
+  .text-container {
+    width: 80%;
+    margin: auto;
+
+    .contact-data {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0px 20px;
+      }
+    }
+  }
+
+  .form-container {
+    width: 60%;
+    margin: auto;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      border: none;
+      border-radius: 5px;
+      margin: 10px 0px;
+    }
+
+    input {
+      height: 3em;
+    }
+
+    textarea {
+      height: 6em;
+    }
+  }
+}
