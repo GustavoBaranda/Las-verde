@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import NavBar from "./Components/NavBar/Index";
-import Home from "./Components/Pages/Home/Index";
-import Products from "./Components/Pages/Products/Index";
-import About from "./Components/Pages/About/Index";
-import Contacts from "./Components/Pages/Contacts/Index";
-import WhatsApp from "./Components/WhatsApp/Index";
-import Footer from "./Components/Footer/Index";
+import NavBar from "./Components/NavBar";
+import Home from "./Components/Pages/Home";
+import Products from "./Components/Pages/Products";
+import About from "./Components/Pages/About";
+import Contacts from "./Components/Pages/Contacts";
+import WhatsApp from "./Components/WhatsApp";
+import Footer from "./Components/Footer";
 import "./App.scss";
 
 function App() {
