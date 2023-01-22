@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.scss";
+import Slider from "./Slider/Slider";
 
 const Home = () => {
   return (
-    <div className="titulo">
-      <h1>HOME</h1>
-    </div>
+    <>
+      <Slider />
+    </>
   );
 };
 

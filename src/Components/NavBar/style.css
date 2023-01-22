@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
-.navbar {
+.navBar {
   padding-top: 30px;
   display: flex;
   justify-content: space-evenly;
@@ -10,7 +10,7 @@
   margin-bottom: 50px;
 }
 
-.LogoContainer {
+.navBar .LogoContainer {
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
@@ -18,14 +18,13 @@
   cursor: pointer;
 }
 
-.nav-links {
+.navBar .nav-links {
   display: flex;
   justify-content: flex-end;
   list-style: none;
 }
 
-.NavLink,
-li {
+.navBar .nav-links .NavLink {
   text-decoration: none;
   padding: 5px 0 2px;
   margin: 0 10px;
@@ -38,7 +37,20 @@ li {
   position: relative;
 }
 
-.NavLink::before {
+.navBar .nav-links .NavLink li {
+  text-decoration: none;
+  padding: 5px 0 2px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #404e4e;
+  font-weight: 500;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navBar .nav-links .NavLink::before {
   content: "";
   height: 2px;
   width: 0%;
@@ -49,49 +61,39 @@ li {
   transition: 0.4s ease-in-out;
 }
 
-.NavLink:hover::before {
+.navBar .nav-links .NavLink:hover::before {
   width: 100%;
 }
 
-.active li {
+.navBar .nav-links .active li {
   max-height: 100%;
   max-width: 100%;
   color: #404e4e;
-  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 5px;
 }
 
-.mobile-menu-icon {
-  display: none;
-}
-
-.navSocial {
+.navBar .navSocial {
   display: block;
 }
 
-.socialItem {
+.navBar .navSocial .socialItem {
   display: flex;
   justify-content: space-around;
 }
 
-.navMail:hover {
-  color: #000;
-}
-
-.navMail {
-  text-decoration: none;
-  color: #404e4e;
-}
-
-.facebookIcon svg {
+.navBar .navSocial .socialItem .facebookIcon svg {
   border-radius: 40%;
   font-size: 2em;
   fill: gray;
   margin: 0;
 }
 
-.instagramIcon svg {
+.navBar .navSocial .socialItem .facebookIcon svg:hover {
+  fill: #3b5998;
+}
+
+.navBar .navSocial .socialItem .instagramIcon svg {
   background-color: gray;
   border-radius: 40%;
   font-size: 2em;
@@ -99,17 +101,26 @@ li {
   margin: 0;
 }
 
-.facebookIcon svg:hover {
-  fill: #3b5998;
-}
-
-.instagramIcon svg:hover {
+.navBar .navSocial .socialItem .instagramIcon svg:hover {
   background-color: #e95950;
   fill: #fff;
 }
 
+.navBar .navSocial .navMail {
+  text-decoration: none;
+  color: #404e4e;
+}
+
+.navBar .navSocial .navMail:hover {
+  color: #000;
+}
+
+.navBar .mobile-menu-icon {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
-  .navbar {
+  .navBar {
     padding-top: 20px;
     width: 100%;
     padding-left: 5px;
@@ -118,17 +129,21 @@ li {
     background-color: #fff;
     position: fixed;
     top: 0px;
+    z-index: 1000;
   }
-  .LogoContainer {
+  .navBar .LogoContainer {
     display: flex;
     margin: 0 auto;
     left: 20px;
     position: absolute;
   }
-  .nav-links {
+  .navBar .nav-links {
     display: none;
   }
-  .nav-links-mobile {
+  .navBar ul.nav-links-mobile {
+    padding: 0;
+  }
+  .navBar .nav-links-mobile {
     position: absolute;
     display: block;
     list-style: none;
@@ -140,15 +155,7 @@ li {
     max-height: 100vh;
     z-index: 100;
   }
-  ul.nav-links-mobile {
-    padding: 0;
-  }
-  .mobile-menu-icon svg {
-    padding-top: 20px;
-    margin: 0;
-  }
-  .navLink,
-  li {
+  .navBar .nav-links-mobile .NavLink {
     color: #404e4e;
     font-weight: bold;
     text-align: center;
@@ -156,8 +163,25 @@ li {
     padding: 10px 0;
     width: 100%;
     transition: all 0.5s ease;
+    text-decoration: none;
   }
-  .mobile-menu-icon {
+  .navBar .nav-links-mobile .NavLink li {
+    color: #404e4e;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  .navBar .nav-links-mobile .active li {
+    color: #787da7;
+  }
+  .navBar .navSocial {
+    display: none;
+  }
+  .navBar .mobile-menu-icon {
     display: block;
     position: absolute;
     font-size: 30px;
@@ -168,10 +192,8 @@ li {
     top: 17px;
     right: 25px;
   }
-  .active li {
-    color: #787da7;
-  }
-  .navSocial {
-    display: none;
+  .navBar .mobile-menu-icon svg {
+    padding-top: 20px;
+    margin: 0;
   }
 }

@@ -9,7 +9,7 @@ const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navBar">
       <div className="LogoContainer">
         <Link className="logo" to="/">
           <img src={logo} alt="logo las verde fábrica de jugos" />

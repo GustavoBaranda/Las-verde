@@ -18,7 +18,7 @@ const Products = () => {
         </Link>
       </div>
       <div className="cards-products">
-        <div class="card">
+        <div className="card">
           <img src={producto} alt="jugo" />
           <strong>Jugo 1</strong>
           <p>Descripción</p>
@@ -26,7 +26,7 @@ const Products = () => {
             <button className="btn-basic">Ver detalle</button>
           </Link>
         </div>
-        <div class="card">
+        <div className="card">
           <img src={producto} alt="jugo" />
           <strong>Jugo 1</strong>
           <p>Descripción</p>
@@ -34,7 +34,7 @@ const Products = () => {
             <button className="btn-basic">Ver detalle</button>
           </Link>
         </div>
-        <div class="card">
+        <div className="card">
           <img src={producto} alt="jugo" />
           <strong>Jugo 1</strong>
           <p>Descripción</p>

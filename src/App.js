@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Navigate, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Pages/Home";
 import Products from "./Components/Pages/Products";
@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path="/products" element={ <Products /> } />
-          <Route exact path="/about" element= {<About /> } />
+          <Route exact path="/about" element= { <About /> } />
           <Route exact path="/Contacts" element={ <Contacts /> } />
           <Route path="/" element={ <Home /> } />
           <Route path="*" element={ <Navigate to="/" /> } />
