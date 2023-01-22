@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './style.scss';
 import BtnSlider from './BtnSlider';
@@ -7,6 +7,13 @@ import dataSlider from './dataSlider';
 const Slider = ()=> {
 
     const [slideIndex, setSlideIndex] = useState(1)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSlideIndex(slideIndex ===  dataSlider.length ? 1 : slideIndex + 1);
+        }, 5000);
+        return () => clearInterval(interval);
+      }, [slideIndex]);    
 
     const nextSlide = () => {
         if(slideIndex !== dataSlider.length){
