@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import './style.scss';
 import BtnSlider from './BtnSlider';
 import dataSlider from './dataSlider';
+import './style.scss';
 
 const Slider = ()=> {
 

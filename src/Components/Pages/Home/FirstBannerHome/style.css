@@ -1,0 +1,36 @@
+.firstBannerHomeContainer {
+  margin: 0 auto;
+  top: 100px;
+  bottom: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 95%;
+}
+
+.firstBannerHomeContainer .firstBannerHome-title {
+  bottom: 50px;
+}
+
+.firstBannerHomeContainer .firstBannerHome-title h2 {
+  font-weight: bold;
+}
+
+.firstBannerHomeContainer .firstBannerHome-items {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px auto 100px auto;
+}
+
+.firstBannerHomeContainer .firstBannerHome-items div img {
+  width: 64px;
+}
+
+.firstBannerHomeContainer .firstBannerHome-items div p {
+  font-size: 14px;
+}
+
+.firstBannerHomeContainer .firstBannerHome-btnContainer {
+  margin: 50px auto 100px auto;
+}

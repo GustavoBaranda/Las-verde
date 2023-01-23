@@ -1,0 +1,83 @@
+
+.thirdBannerHomeContainer{
+    margin: 0 auto;
+    top: 5px;
+    bottom: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 620px;
+    text-align: right;
+    position: relative;
+
+    .thirdBannerHome-title{
+        max-width:350px ;
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        top: 25%;
+        right: 8%;
+        display: flex;
+    }
+
+    .thirdBannerHome-SubTittle{
+        max-width:450px ;
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        top: 45%;
+        right: 8%;
+        display: flex;
+    }
+
+    .thirdBannerHome-socialItem{
+        position: absolute;
+        bottom: 25%;
+        right: 8%;
+        display: flex;
+        text-align: center;
+
+        .facebookIcon {
+            svg {
+              background-color: #3b5998;   
+              border-radius: 40%;
+              font-size: 2em;
+              fill: #f1f1f1;
+              margin: 20px;
+    
+              &:hover {
+                background-color: #f1f1f1; 
+                fill: #3b5998;
+              }
+            }
+          }
+    
+          .instagramIcon {
+            svg {
+              background-color: #f1f1f1;
+              border-radius: 40%;
+              font-size: 2em;
+              fill: #e95950;
+              margin: 20px;
+              
+              &:hover {
+                background-color: #e95950;
+                fill: #fff;
+              }
+            }
+          }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+   
+}
+
+
+
+        

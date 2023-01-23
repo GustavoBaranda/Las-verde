@@ -1,9 +1,4 @@
-.titulo {
-  text-align: center;
-}
-
-@media screen and (max-width: 1100px) {
-  .titulo h1 {
-    padding-top: 100px;
-  }
+.homeContainer {
+  display: block;
+  width: 100%;
 }
