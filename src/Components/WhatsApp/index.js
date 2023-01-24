@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsApp = () => {

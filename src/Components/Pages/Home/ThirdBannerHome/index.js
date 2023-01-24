@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import './style.scss';
 import thirdBannerHome from '../../../../assets/thirdBanner.png';
 
 

@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 import leftArrow from "./icons/left-arrow.png";
 import rightArrow from "./icons/right-arrow.png";
 

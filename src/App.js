@@ -6,8 +6,7 @@ import About from "./Components/Pages/About";
 import Contacts from "./Components/Pages/Contacts";
 import WhatsApp from "./Components/WhatsApp";
 import Footer from "./Components/Footer";
-import "./App.scss";
-
+import './styles/styles.scss'
 function App() {
   return (
     <>

@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 import Slider from "./Slider/Slider";
 import FirstBannerHome from "./FirstBannerHome";
 import SecondBannerHome from "./SecondBannerHome";

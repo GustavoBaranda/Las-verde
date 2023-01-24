@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import "./style.scss";
-import { FaBars } from "react-icons/fa";
-import { FaTimes, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import { FaBars, FaTimes, FaFacebook, FaInstagram } from "react-icons/fa";
 import logo from "../../assets/logo.svg";
 
 const NavBar = () => {

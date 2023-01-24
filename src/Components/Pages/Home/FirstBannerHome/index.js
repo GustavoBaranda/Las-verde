@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import dataFirstbannerHome from './dataFirstBannerHome';
-import './style.scss';
 
-
-const BannerHome1 = () => {
+const FirstBannerHome = () => {
   return (
     <div className="firstBannerHomeContainer">
         <div className="firstBannerHome-title">
@@ -31,4 +29,4 @@ const BannerHome1 = () => {
   )
 }
 
-export default BannerHome1;
+export default FirstBannerHome;

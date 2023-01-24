@@ -1,6 +1,4 @@
 import React from "react";
-import "./style.scss";
-import "../../../App.scss";
 import foto from "../../../assets/foto-proceso.png";
 import video from "../../../assets/video-proceso.png";
 import jugo from "../../../assets/foto-produ.png";

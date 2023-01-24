@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
+@import './components/navBar';
+@import './components/footer';
+@import './components/whatsApp';
+@import './components/pages/about';
+@import './components/pages/contacts';
+@import './components/pages/home';
+@import './components/pages/products';
+
 
 body {
   margin: 0;
@@ -29,3 +37,5 @@ code {
     border-color: #08954762;
   }
 }
+
+//
