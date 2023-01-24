@@ -27,6 +27,7 @@ const Footer = () => {
       </div>
       <div className="footer__contariner--copyright">
         <p>© Copyright Las Verde, todos los derechos reservados.</p>
+        <p>Powered by Baranda Gustavo - Melisa Caputo</p>
       </div>
     </footer>
   );

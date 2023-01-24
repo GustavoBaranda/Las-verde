@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
 
 .navBar {
-  padding-top: 30px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -9,6 +11,9 @@
   background-color: #fff;
   font-family: Poppins;
   margin-bottom: 50px;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
 
   .LogoContainer {
     margin-left: 0.5rem;
