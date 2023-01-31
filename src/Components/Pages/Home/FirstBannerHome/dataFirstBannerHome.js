@@ -7,22 +7,22 @@ const dataHome1 = [
   {
     id: 1,
     img: img1,
-    title: "AGUA",
+    title: "SIN AGUA",
   },
   {
     id: 2,
     img: img2,
-    title: "COLORANTES",
+    title: "SIN COLORANTES",
   },
   {
     id: 3,
     img: img3,
-    title: "CONSERVANTES",
+    title: "SIN CONSERVANTES",
   },
   {
     id: 4,
     img: img4,
-    title: "ENDULZANTES",
+    title: "SIN ENDULZANTES",
   },
 ];
 

@@ -1,95 +1,97 @@
-.thirdBannerHomeContainer {
-  margin: 0 auto;
-  top: 5px;
-  bottom: 100px;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 620px;
-  text-align: right;
-  position: relative;
-
-  .thirdBannerHome-title {
-    max-width: 350px;
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-    top: 25%;
-    right: 8%;
-    display: flex;
-  }
-
-  .thirdBannerHome-SubTittle {
-    max-width: 450px;
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-    top: 45%;
-    right: 8%;
-    display: flex;
-  }
-
-  .thirdBannerHome-socialItem {
-    position: absolute;
-    bottom: 25%;
-    right: 8%;
-    display: flex;
-    text-align: center;
-
-    .facebookIcon {
-      svg {
-        background-color: #3b5998;
-        border-radius: 50%;
-        font-size: 2em;
-        fill: #f1f1f1;
-        margin: 20px;
-
-        &:hover {
-          background-color: #f1f1f1;
-          fill: #3b5998;
-        }
-      }
-    }
-
-    .instagramIcon {
-      svg {
-        background-color: #f1f1f1;
-        border-radius: 20%;
-        font-size: 2em;
-        fill: #e95950;
-        margin: 20px;
-
-        &:hover {
-          background-color: #e95950;
-          fill: #fff;
-        }
-      }
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 850px) {
-    text-align: center;
-
-    .thirdBannerHome-title {
-      font-weight: bold;
-    }
-
-    .thirdBannerHome-SubTittle {
-      width: 80%;
-    }
-
-    .thirdBannerHome-socialItem {
-      width: 80%;
-      margin: auto;
-      bottom: 100px;
-      left: 35%;
-    }
-  }
-}
+.thirdBannerHomeContainer { 
+  margin: 0 auto; 
+  top: 5px; 
+  bottom: 100px; 
+  display: block; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: 620px; 
+  text-align: right; 
+  position: relative; 
+ 
+  .thirdBannerHome-title { 
+    max-width: 350px; 
+    color: #fff; 
+    font-weight: bold; 
+    position: absolute; 
+    top: 25%; 
+    right: 8%; 
+  } 
+ 
+  .thirdBannerHome-SubTittle { 
+    max-width: 450px; 
+    color: #fff; 
+    font-weight: bold; 
+    position: absolute; 
+    top: 45%; 
+    right: 8%;  
+  } 
+ 
+  .thirdBannerHome-socialItem { 
+    position: absolute; 
+    bottom: 25%; 
+    right: 8%; 
+     
+    .facebookIcon { 
+      svg { 
+        background-color: #3b5998; 
+        border-radius: 50%; 
+        font-size: 2em; 
+        fill: #f1f1f1; 
+        margin: 20px; 
+ 
+        &:hover { 
+          background-color: #f1f1f1; 
+          fill: #3b5998; 
+        } 
+      } 
+    } 
+ 
+    .instagramIcon { 
+      svg { 
+        background-color: #f1f1f1; 
+        border-radius: 30%; 
+        font-size: 2em; 
+        fill: #e95950; 
+        margin: 20px; 
+ 
+        &:hover { 
+          background-color: #e95950; 
+          fill: #fff; 
+        } 
+      } 
+    } 
+  } 
+ 
+  img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  } 
+ 
+  @media screen and (max-width: 850px) { 
+    text-align: center; 
+ 
+    .thirdBannerHome-title { 
+      top: 25%;  
+      right: 0;  
+      left: 0;  
+      margin: auto;  
+    } 
+ 
+    .thirdBannerHome-SubTittle { 
+      top: 45%; 
+      right: 0;  
+      left: 0;  
+      margin: auto;  
+    } 
+ 
+    .thirdBannerHome-socialItem { 
+      text-align: center; 
+      top: 75%;  
+      right: 0;  
+      left: 0;     
+    } 
+  } 
+} 

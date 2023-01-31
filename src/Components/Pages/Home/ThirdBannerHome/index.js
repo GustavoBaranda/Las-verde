@@ -2,7 +2,6 @@ import React from 'react';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import thirdBannerHome from '../../../../assets/thirdBanner.png';
 
-
 const ThirdBannerHome = () => {
   return (
     <div className="thirdBannerHomeContainer">
@@ -28,7 +27,7 @@ const ThirdBannerHome = () => {
                 <FaInstagram />
             </a>
         </div>
-        <img src={thirdBannerHome} alt="thirdBannerHome" />
+        <img src={ thirdBannerHome } alt="thirdBannerHome" />
     </div>
   )
 }
