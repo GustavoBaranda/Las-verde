@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "./Slider/Slider";
+import Slider from "./Slider";
 import FirstBannerHome from "./FirstBannerHome";
 import SecondBannerHome from "./SecondBannerHome";
 import ThirdBannerHome from "./ThirdBannerHome";

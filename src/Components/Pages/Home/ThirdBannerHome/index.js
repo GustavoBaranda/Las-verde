@@ -1,6 +1,9 @@
 import React from 'react';
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import thirdBannerHome from '../../../../assets/thirdBanner.png';
+import { 
+    FaFacebook, 
+    FaInstagram 
+} from "react-icons/fa";
 
 const ThirdBannerHome = () => {
   return (
