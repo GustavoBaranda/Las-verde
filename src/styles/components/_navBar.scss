@@ -39,7 +39,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-  
+
       li {
         text-decoration: none;
         padding: 5px 0 2px;
@@ -52,7 +52,7 @@
         align-items: center;
         position: relative;
       }
-  
+
       &::before {
         content: "";
         height: 2px;
@@ -66,7 +66,7 @@
 
       &:hover::before {
         width: 100%;
-      }  
+      }
     }
     .active {
       li {
@@ -75,7 +75,7 @@
         color: #404e4e;
         font-weight: bold;
         border-radius: 5px;
-     }
+      }
     }
   }
 
@@ -102,23 +102,23 @@
       .instagramIcon {
         svg {
           background-color: gray;
-          border-radius: 40%;
+          border-radius: 30%;
           font-size: 2em;
           fill: #fff;
           margin: 0;
-          
+
           &:hover {
             background-color: #e95950;
             fill: #fff;
           }
         }
-      }      
+      }
     }
 
     .navMail {
       text-decoration: none;
       color: #404e4e;
-      
+
       &:hover {
         color: #000;
       }
@@ -130,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-device-width: 320px) and (max-width: 880px) {
   .navBar {
     padding-top: 20px;
     width: 100%;
@@ -155,6 +155,7 @@
 
     ul.nav-links-mobile {
       padding: 0;
+      height: 100vh;
     }
 
     .nav-links-mobile {
@@ -169,7 +170,7 @@
       max-height: 100vh;
       z-index: 100;
 
-      .NavLink{
+      .NavLink {
         color: #404e4e;
         font-weight: bold;
         text-align: center;
@@ -183,13 +184,12 @@
           color: #404e4e;
           font-weight: bold;
           text-align: center;
-          margin: 0;
+          margin: 60px 0;
           padding: 10px 0;
           width: 100%;
           transition: all 0.5s ease;
           text-decoration: none;
         }
-  
       }
 
       .active {
@@ -213,11 +213,12 @@
       outline: none;
       top: 17px;
       right: 25px;
+      cursor: pointer;
 
       svg {
         padding-top: 20px;
         margin: 0;
-      }    
+      }
     }
-  }  
+  }
 }

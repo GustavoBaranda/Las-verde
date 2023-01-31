@@ -1,9 +1,11 @@
 .nosotros-first {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  margin-top: 8em;
   margin-bottom: 50px;
 
-  .first-text {
+  .first-container {
+    @media screen and (min-device-width: 881px) {
+      display: flex;
+    }
     p,
     h2 {
       width: 80%;
@@ -18,6 +20,15 @@
     p {
       padding-top: 4%;
       line-height: 30px;
+    }
+  }
+
+  @media screen and (min-device-width: 320px) and (max-width: 880px) {
+    text-align: center;
+
+    img {
+      width: 100%;
+      margin-top: 50px;
     }
   }
 }
@@ -28,37 +39,38 @@
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
+  margin-top: 30px;
 
-  .second-text {
-    margin-top: 30px;
-
-    p,
-    h2,
-    h3 {
-      width: 80%;
-      margin: auto;
-    }
-
-    h2,
-    h3 {
-      font-weight: bolder;
-      padding-top: 3%;
-    }
-
-    p {
-      padding-top: 2%;
-      line-height: 30px;
-    }
+  p,
+  h2,
+  h3 {
+    width: 80%;
+    margin: auto;
   }
 
-  .photo-container {
-    align-self: center;
-    width: 100%;
-    margin: auto;
+  h2,
+  h3 {
+    font-weight: bolder;
+    padding-top: 3%;
+  }
 
+  p {
+    padding-top: 2%;
+    line-height: 30px;
+  }
+
+  img {
+    width: 20em;
+    margin: auto;
+  }
+
+  @media screen and (min-device-width: 320px) and (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     img {
-      margin: 40px 0px 0px 100px;
-      width: 60%;
+      width: 70%;
+      margin-top: 50px;
     }
   }
 }
@@ -91,6 +103,18 @@
     img {
       width: 25em;
       margin: 40px 0px 0px 50px;
+    }
+  }
+
+  @media screen and (min-device-width: 320px) and (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    div {
+      img {
+        margin: 20px 0;
+      }
     }
   }
 }

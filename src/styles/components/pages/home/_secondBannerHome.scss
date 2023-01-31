@@ -1,45 +1,52 @@
+.SecondBannerHomeContainer {
+  margin: 0 auto;
+  top: 5px;
+  bottom: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 620px;
+  position: relative;
 
-.SecondBannerHomeContainer{
-    margin: 0 auto;
-    top: 5px;
-    bottom: 100px;
-    display: block;
-    justify-content: center;
-    align-items: center;
+  .secondBannerHome-title {
+    max-width: 350px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    display: flex;
+  }
+
+  .secondBannerHome-SubTittle {
+    max-width: 350px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    display: flex;
+  }
+
+  .btn-container {
+    position: absolute;
+    bottom: 25%;
+    left: 8%;
+  }
+
+  img {
     width: 100%;
-    height: 620px;
-    position: relative;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .secondBannerHome-title{
-        max-width:350px ;
-        color: #fff;
-        font-weight: bold;
-        position: absolute;
-        top: 25%;
-        left: 8%;
-        display: flex;
-    }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 850px) {
+    text-align: center;
 
-    .secondBannerHome-SubTittle{
-        max-width:350px ;
-        color: #fff;
-        font-weight: bold;
-        position: absolute;
-        top: 45%;
-        left: 8%;
-        display: flex;
+    .btn-container {
+      left: 25%;
+      bottom: 18%;
     }
-
-    .btn-container{
-        position: absolute;
-        bottom: 25%;
-        left: 8%;
-        display: flex;
-    }
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  }
 }
