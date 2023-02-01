@@ -2,8 +2,7 @@
   background-color: rgba(225, 225, 225, 0.424);
 
   .headline-products {
-    display: grid;
-    justify-content: flex-start;
+    display: block;
     width: 50%;
     margin: 50px 0px 50px 80px;
     padding-top: 50px;
@@ -19,13 +18,15 @@
   }
 
   .cards-products {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-    left: 60px;
+    // position: relative;
+    gap: 60px;
     padding-bottom: 50px;
 
     .card {
+      margin: 0 auto;
       background-color: white;
       display: flex;
       flex-direction: column;
