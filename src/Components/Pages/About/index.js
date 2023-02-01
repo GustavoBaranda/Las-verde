@@ -93,9 +93,7 @@ const About = () => {
             siempre en búsqueda de seguir mejorando y hacer feliz al cliente.
           </p>
         </div>
-        <div>
-          <img src={video} alt="Video del proceso productivo de los jugos" />
-        </div>
+        <img src={video} alt="Video del proceso productivo de los jugos" />
       </div>
     </div>
   );
