@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Navigate, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Pages/Home";
-import ItemList from "./Components/ItemList";
+import Products from "./Components/Pages/Products";
 import About from "./Components/Pages/About";
 import Contacts from "./Components/Pages/Contacts";
 import WhatsApp from "./Components/WhatsApp";
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path="/products" element={<ItemList />} />
+          <Route exact path="/products" element={<Products />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contacts" element={<Contacts />} />
           <Route path="/" element={<Home />} />
