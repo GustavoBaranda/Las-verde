@@ -52,10 +52,11 @@
         align-items: center;
         margin: 0 auto;
         background-color: white;
-        width: 350px;
+        max-width: 350px;
         padding: 20px;
         border-radius: 20px;
         text-align: center;
+        margin-bottom: 50px;
   
         img { 
           width: 100%; 
@@ -242,10 +243,22 @@
     .popUp-Body{
       max-width: 750px;
       max-height: 100%;
-      .popUp-content
-      .popUp {
-        margin-left: -2.5%;
-
+      overflow-y: auto;
+      
+      
+      
+      .popUp-content{
+        padding: 0 20px;
+        
+        background-color:  none;
+        .close{
+          right: 0;
+          top: 8px;
+        }
+        
+        .popUp {
+          margin-left: -2.5%;
+          
         div{
           h2{
             font-size: 26px;
@@ -263,6 +276,7 @@
           }
         }  
       } 
+    }
     }     
   }  
  } 
@@ -291,47 +305,46 @@
       justify-content: space-around;
       width: 100%;
 
-      .itemContainer
-      .popUp-container{
-        padding-top: 150px;
+      .itemContainer{
+        .card{
+          padding: 10px;
+        }
+        .popUp-container{
+          padding-top: 150px;
 
-        .popUp-Body{
-          max-width: 600px;
-                       
-          .popUp-content{                                
-            .close{
-              right: -18px;
-              top: 8px;
+          .popUp-Body{
+            max-width: 600px;
+                        
+            .popUp-content{                                
+              .popUp {
+                margin-left: -3.5%;
+
+                div
+                .productImg { 
+                  max-width: 200px;
+                }
+
+                div{
+                  h2{
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin: 16px 0;
+                  }
+        
+                  h3{
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin: 18px 0;
+                  }
+        
+                  p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin: 10px 0;
+                  }
+                }  
+              }         
             }
-      
-            .popUp {
-              margin-left: -3.5%;
-
-              div
-              .productImg { 
-                max-width: 200px;
-              }
-
-              div{
-                h2{
-                  font-size: 24px;
-                  line-height: 36px;
-                  margin: 16px 0;
-                }
-      
-                h3{
-                  font-size: 20px;
-                  line-height: 26px;
-                  margin: 18px 0;
-                }
-      
-                p{
-                  font-size: 12px;
-                  line-height: 18px;
-                  margin: 10px 0;
-                }
-              }  
-            }         
           }
         }
       } 
@@ -365,15 +378,15 @@
 
       .itemContainer
       .popUp-container{
-        padding-top: 130px;
+        padding-top: 120px;
         .popUp-Body{
-          max-width: 300px;
+          max-width: 280px;
           max-height: 100%;
       
           .popUp-content{                                
             .close{
-              right: 0;
-              top: 4px;
+              right: 12px;
+              top: 2px;
 
               svg {       
                 font-size: 0.8em;
@@ -402,19 +415,19 @@
                 h2{
                   font-size: 20px;
                   line-height: 26px;
-                  margin: 10px 0;
+                  margin: 5px 0;
                 }
       
                 h3{
                   font-size: 16px;
                   line-height: 20px;
-                  margin: 10px 0;
+                  margin: 5px 0;
                 }
       
                 p{
                   font-size: 11px;
                   line-height: 16px;
-                  margin: 6px 0;
+                  margin: 4px 0;
                 }
               }
               .popUp-SocialItem {
