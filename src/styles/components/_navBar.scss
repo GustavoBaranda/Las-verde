@@ -1,61 +1,44 @@
 .navBar {
+  @extend .centrar;
+  justify-content: space-evenly;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 70px;
-  background-color: #fff;
-  font-family: Poppins;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
+  background-color: $blanco;
   position: fixed;
   top: 0px;
   z-index: 1000;
 
   .LogoContainer {
+    @extend .centrar;
     margin-left: 0.5rem;
-    display: flex;
-    align-items: center;
     font-size: 1.5em;
     cursor: pointer;
   }
 
   .nav-links {
-    display: flex;
+    @extend .centrar;
     justify-content: flex-end;
     list-style: none;
 
     .NavLink {
       text-decoration: none;
       padding: 5px 0 2px;
-      margin: 0 10px;
+      margin: 0 30px;
       cursor: pointer;
-      color: #404e4e;
+      color: $gris-oscuro;
       font-weight: 500;
       font-size: 1.2rem;
       justify-content: center;
       align-items: center;
       position: relative;
 
-      li {
-        text-decoration: none;
-        padding: 5px 0 2px;
-        margin: 0 10px;
-        cursor: pointer;
-        color: #404e4e;
-        font-weight: 500;
-        font-size: 1.2rem;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-      }
- 
       &::before {
         content: "";
         height: 2px;
         width: 0%;
-        background: #404e4e;
+        background: $gris-oscuro;
         position: absolute;
         left: 0;
         bottom: -12px;
@@ -64,17 +47,17 @@
 
       &:hover::before {
         width: 100%;
-      } 
+      }
     }
 
     .active {
       li {
         max-height: 100%;
         max-width: 100%;
-        color: #404e4e;
+        color: $gris-oscuro;
         font-weight: bold;
         border-radius: 5px;
-      } 
+      }
     }
   }
 
@@ -89,40 +72,37 @@
         svg {
           border-radius: 40%;
           font-size: 2em;
-          fill: #404E4E;
-          ;
+          fill: $gris-oscuro;
           margin: 0;
 
           &:hover {
-            fill: #3b5998;
+            fill: $azul;
           }
         }
       }
 
       .instagramIcon {
         svg {
-          background-color: #404E4E;
-          ;
-          border-radius: 30%; 
+          background-color: $gris-oscuro;
+          border-radius: 50%;
           font-size: 2em;
-          fill: #fff;
+          fill: $blanco;
           margin: 0;
- 
+          width: 25px;
+          height: 25px;
+          padding: 5px;
+
           &:hover {
-            background-color: #e95950;
-            fill: #fff;
+            background-color: $rojo;
+            fill: $blanco;
           }
         }
-      } 
+      }
     }
 
     .navMail {
       text-decoration: none;
-      color: #404e4e;
- 
-      &:hover {
-        color: #000;
-      }
+      color: $gris-oscuro;
     }
   }
 
@@ -135,10 +115,11 @@
   .navBar {
     padding-top: 20px;
     width: 100%;
+    height: 70px;
     padding-left: 5px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-color: $blanco;
     position: fixed;
     top: 0px;
     z-index: 1000;
@@ -155,22 +136,23 @@
     }
 
     ul.nav-links-mobile {
-      padding: 0;       
+      padding: 0;
     }
 
     .nav-links-mobile {
       position: absolute;
       display: block;
       list-style: none;
-      background-color: #ebebeb;
+      background-color: $gris-claro;
       left: 0;
       top: 68px;
       transition: all 0.5s ease-out;
       width: 100%;
       z-index: 1000;
 
-      .NavLink { 
-        color: #404e4e;
+      .NavLink,
+      li {
+        color: $gris-oscuro;
         font-weight: bold;
         text-align: center;
         margin: 0;
@@ -180,10 +162,10 @@
         text-decoration: none;
 
         li {
-          color: #404e4e;
+          color: $gris-oscuro;
           font-weight: bold;
           text-align: center;
-          margin: 60px 0; 
+          margin: 60px 0;
           padding: 10px 0;
           width: 100%;
           transition: all 0.5s ease;
@@ -193,7 +175,7 @@
 
       .active {
         li {
-          color: #787da7;
+          color: $violeta;
         }
       }
     }
@@ -206,18 +188,18 @@
       display: block;
       position: absolute;
       font-size: 30px;
-      color: #404e4e;
-      background-color: #fff;
+      color: $gris-oscuro;
+      background-color: $blanco;
       border: none;
       outline: none;
       top: 17px;
       right: 25px;
-      cursor: pointer; 
+      cursor: pointer;
 
       svg {
         padding-top: 20px;
         margin: 0;
-      } 
+      }
     }
-  } 
+  }
 }

@@ -1,289 +1,294 @@
 .contacts-container {
-
-  .contactInfo-container { 
-    margin: 130px auto 0 auto;  
+  .contactInfo-container {
+    margin: 130px auto 0 auto;
     padding: 100px 0;
-    color: #404E4E;
-    background-color: rgba(225, 225, 225, 0.424); 
+    color: $gris-oscuro;
+    background-color: $gris-claro;
     display: flex;
     justify-content: space-evenly;
-   
-    .textForm-container { 
-      padding-top: 25px; 
-      width: 100%; 
+
+    .textForm-container {
+      padding-top: 25px;
+      width: 100%;
       display: flex;
-      
-      .textForm{
+
+      .textForm {
         max-width: 98%;
         margin: 0 auto;
         margin-left: 17%;
-  
-        h2{
+
+        h2 {
           font-size: 32px;
           font-weight: bold;
           line-height: 46px;
         }
-  
-        p{  
+
+        p {
           font-size: 20px;
           font-weight: 500;
           line-height: 32px;
         }
-        .textForm-LookingFor{
+        .textForm-LookingFor {
           font-size: 24px;
           font-weight: 500;
           line-height: 38px;
         }
-  
-        .textFrom-SocialItems{
+
+        .textFrom-SocialItems {
           display: flex;
           justify-content: left;
-  
+
           .facebookIcon {
             svg {
               border-radius: 40%;
               font-size: 2em;
-              fill: #404E4E;
+              fill: $gris-oscuro;
               margin-right: 10px;
-  
+
               &:hover {
-                fill: #3b5998;
+                fill: $azul;
               }
             }
           }
-  
+
           .instagramIcon {
             svg {
-              background-color: #404E4E;
-              border-radius: 30%; 
+              background-color: $gris-oscuro;
+              border-radius: 30%;
               font-size: 2em;
-              fill: #fff;
+              fill: $blanco;
               margin-left: 10px;
-   
+
               &:hover {
-                background-color: #e95950;
-                fill: #fff;
+                background-color: $rojo;
+                fill: $blanco;
               }
             }
-          } 
+          }
         }
-   
+
         .contact-data {
+          @extend .centrar;
           margin: 10px 0;
-          display: flex;
-          align-items: center;
           cursor: pointer;
-  
-          svg { 
-            font-size: 2em; 
-            fill: #404E4E; 
-         
-            &:hover { 
-              fill: #000; 
-            } 
-          } 
+
+          svg {
+            font-size: 2em;
+            fill: $gris-oscuro;
+
+            &:hover {
+              fill: #000;
+            }
+          }
           a {
             text-decoration: none;
-            font-size: 18px;;
-            color: #404E4E;
+            font-size: 18px;
+            color: $gris-oscuro;
             margin: 0px 20px;
-            &:hover { 
+            &:hover {
               color: #000;
-              font-weight: bold; 
-            } 
+              font-weight: bold;
+            }
           }
-        } 
-      } 
-    } 
-   
-    .form-container { 
-      width: 100%; 
-      display: block; 
-      
-      form { 
-        margin: 0 auto; 
-        padding: 0 5%; 
-        max-width: 400px; 
-        display: flex; 
-        flex-direction: column; 
-      } 
-   
-      input, 
-      textarea { 
-        border: none; 
-        border-radius: 10px; 
-        margin: 10px 0px; 
-      } 
-   
-      input { 
-        height: 3em; 
-      } 
-   
-      textarea { 
-        height: 6em; 
-      } 
-    } 
-  } 
+        }
+        @media screen and (min-device-width: 320px) and (max-width: 880px) {
+          padding: 0px 30px;
+        }
+      }
+    }
 
-  .contactLocation-Container{
+    .form-container {
+      width: 100%;
+      display: block;
+
+      form {
+        margin: 0 auto;
+        padding: 0 5%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input,
+      textarea {
+        border: none;
+        border-radius: 10px;
+        margin: 10px 0px;
+      }
+
+      input {
+        height: 3em;
+      }
+
+      textarea {
+        height: 6em;
+      }
+    }
+  }
+
+  .contactLocation-Container {
     padding: 100px 5%;
-    display: flex; 
+    display: flex;
     justify-content: center;
+    @media screen and (min-device-width: 320px) and (max-width: 880px) {
+      padding-top: 40px;
+    }
 
-    .contactLocation-maps{
+    .contactLocation-maps {
       display: flex;
-      gap: 5em;    
-      
-      .maps{
-        width: 750px; 
-        height: 520px; 
+      gap: 5em;
+
+      @media screen and (min-device-width: 320px) and (max-width: 880px) {
+        flex-direction: column-reverse;
+      }
+
+      .maps {
+        width: 750px;
+        height: 520px;
         border-radius: 15px;
         border: 0;
       }
 
-      .contactLocation-info{
+      .contactLocation-info {
         text-align: right;
         top: 80px;
 
-        h2{
+        @media screen and (min-device-width: 320px) and (max-width: 880px) {
+          text-align: center;
+          padding: 0px;
+
+          img {
+            display: none;
+          }
+        }
+
+        h2 {
           font-size: 32px;
           line-height: 42px;
           font-weight: bold;
         }
 
-        p{
+        p {
           font-size: 20px;
           line-height: 32px;
           font-weight: 500;
         }
-
       }
     }
   }
 }
 @media screen and (max-width: 1440px) {
-
-  .contactLocation-Container{
-    .contactLocation-maps{
+  .contactLocation-Container {
+    .contactLocation-maps {
       gap: 4em;
 
-      .maps{
-        max-width: 550px; 
-        height: 520px; 
-      }           
+      .maps {
+        max-width: 550px;
+        height: 520px;
+      }
     }
 
-    .contactLocation-info{
+    .contactLocation-info {
       text-align: right;
       top: 80px;
-      
     }
   }
 }
 @media screen and (max-width: 1235px) {
+  .contactLocation-Container {
+    .contactLocation-maps {
+      gap: 1em;
 
-  .contactLocation-Container{  
-    .contactLocation-maps{
-      gap: 1em; 
-
-      .maps{
-        max-width: 400px; 
-        height: 520px; 
-      }           
+      .maps {
+        max-width: 400px;
+        height: 520px;
+      }
     }
 
-    .contactLocation-info{
+    .contactLocation-info {
       text-align: right;
       top: 80px;
     }
-  }  
+  }
 }
 
 @media screen and (max-width: 1100px) {
-
   .contacts-container {
-    .contactInfo-container {   
+    .contactInfo-container {
       margin-top: 0;
       display: block;
-      
-      .textForm-container{
+
+      .textForm-container {
         padding: 50px 0 100px 0;
-      
-        .textForm{
-          max-width: 550px; 
+
+        .textForm {
+          max-width: 550px;
           text-align: center;
           margin: 0 auto;
-    
-          .textFrom-SocialItems{
+
+          .textFrom-SocialItems {
             justify-content: center;
-            // display: none;
           }
-  
+
           .contact-data {
             justify-content: center;
-            // display: none;
           }
         }
-      } 
+      }
     }
 
-    .contactLocation-Container{  
-      .contactLocation-maps{
-        gap: 10px; 
-        .contactLocation-info{
-          h2{
+    .contactLocation-Container {
+      .contactLocation-maps {
+        gap: 10px;
+        .contactLocation-info {
+          h2 {
             font-size: 26px;
           }
-    
-          p{
+
+          p {
             font-size: 16px;
           }
-        }  
+        }
       }
-     
-    } 
-  }  
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
-
-  .contactInfo-container{   
-    
-    .textForm-container{
-        
-      .textForm{
-        h2{
+  .contactInfo-container {
+    .textForm-container {
+      .textForm {
+        h2 {
           font-size: 29px;
           font-weight: bold;
           line-height: 46px;
         }
-  
-        p{  
+
+        p {
           font-size: 18px;
           font-weight: 500;
           line-height: 32px;
         }
-  
-        .textForm-LookingFor{
+
+        .textForm-LookingFor {
           font-size: 22px;
           font-weight: 500;
           line-height: 38px;
         }
-        
-          
+
         .contact-data {
           a {
             text-decoration: none;
-            font-size: 16px;;
-            color: #404E4E;
+            font-size: 16px;
+            color: $gris-oscuro;
             margin: 0px 20px;
-            &:hover { 
+            &:hover {
               color: #000;
-              font-weight: bold; 
-            } 
+              font-weight: bold;
+            }
           }
         }
       }
-    } 
-  } 
-}  
+    }
+  }
+}

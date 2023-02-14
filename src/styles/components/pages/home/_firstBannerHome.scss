@@ -1,35 +1,35 @@
-.firstBannerHomeContainer { 
-  margin: 0 auto; 
-  display: block; 
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
-  max-width: 95%; 
- 
-  .firstBannerHome-title { 
-    bottom: 50px; 
-    h2 { 
-      font-weight: bold; 
-    } 
-  } 
- 
-  .firstBannerHome-items { 
-    display: flex; 
-    justify-content: space-around; 
-    margin: 70px auto 100px auto; 
- 
-    div { 
-      img { 
-        width: 80px; 
-        margin: auto; 
-      } 
- 
-      p { 
-        font-size: 14px; 
-        font-weight: bold; 
-      } 
-    } 
- 
+.firstBannerHomeContainer {
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 95%;
+
+  .firstBannerHome-title {
+    bottom: 50px;
+    h2 {
+      font-weight: bold;
+    }
+  }
+
+  .firstBannerHome-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px auto 100px auto;
+
+    div {
+      img {
+        width: 80px;
+        margin: auto;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
     @media screen and (max-device-width: 520px) {
       div {
         img {
@@ -38,22 +38,22 @@
         p {
           font-size: 12px;
         }
-      } 
+      }
     }
 
     @media screen and (max-device-width: 410px) {
-      div { 
-        img { 
+      div {
+        img {
           width: 50px;
         }
-        p { 
-          font-size: 10px; 
-        } 
-      } 
-    } 
-  } 
- 
-  .firstBannerHome-btnContainer { 
-    margin: 50px auto 100px auto; 
-  } 
-} 
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .firstBannerHome-btnContainer {
+    margin: 50px auto 100px auto;
+  }
+}

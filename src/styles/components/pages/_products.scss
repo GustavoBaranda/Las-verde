@@ -1,80 +1,88 @@
-.products-Container { 
-  background-color: rgba(225, 225, 225, 0.424); 
+.products-Container {
+  background-color: $gris-claro;
   width: 100%;
-  .productsHeader-Container{ 
-    display: flex; 
-    justify-content: space-around; 
-    padding: 130px 20px ; 
-    gap: 20px; 
- 
-    .headline-Products { 
+  .productsHeader-Container {
+    display: flex;
+    justify-content: space-around;
+    padding: 130px 20px;
+    gap: 20px;
+
+    @media screen and (min-device-width: 320px) and (max-width: 880px) {
+      padding-bottom: 60px;
+    }
+
+    .headline-Products {
       display: block;
       max-width: 550px;
- 
-      h2 { 
-        font-size: 32px; 
-        line-height: 46px; 
-        font-weight: bold; 
-      } 
-   
-      p { 
-        font-size: 20px; 
-        line-height: 32px; 
-        font-weight: 500; 
-      } 
-    } 
- 
-    .headline-Image{ 
-      padding-top: 30px; 
- 
-      img{ 
-        padding-top: auto;  
+
+      h2 {
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+      }
+    }
+
+    .headline-Image {
+      padding-top: 30px;
+
+      img {
+        padding-top: auto;
         text-align: center;
         max-width: 420px;
-      } 
-   }
-  } 
- 
-  .cards-products { 
-    display: grid; 
+
+        @media screen and (min-device-width: 320px) and (max-width: 880px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .cards-products {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     grid-gap: 30px;
     margin: 0 auto;
-    padding-bottom: 50px; 
- 
-    .itemContainer{
+    padding-bottom: 50px;
+
+    .itemContainer {
       width: 100%;
- 
-      .card { 
-        display: flex; 
+
+      .card {
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        background-color: white;
+        background-color: $blanco;
         max-width: 350px;
         padding: 20px;
         border-radius: 20px;
         text-align: center;
         margin-bottom: 50px;
-  
-        img { 
-          width: 100%; 
+
+        img {
+          width: 100%;
         }
- 
-        h2{
-          font-size: 24px; 
-          line-height: 46px; 
-          font-weight: 700; 
+
+        h2 {
+          font-size: 24px;
+          line-height: 46px;
+          font-weight: 700;
         }
-        
-        p{
-          font-size: 16px; 
-          line-height: 22px; 
-          font-weight: 500; 
+
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 500;
         }
-      } 
- 
+      }
+
       .popUp-container {
         display: flex;
         flex-direction: row;
@@ -86,345 +94,333 @@
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.3);
-        
-        .popUp-Body{
+
+        .popUp-Body {
           width: 960px;
           height: 600px;
-          
+
           .popUp-content {
             position: relative;
-                                
-            .close{
+
+            .close {
               position: absolute;
               font-size: 30px;
               border-radius: 50%;
               cursor: pointer;
               right: -35px;
               top: 10px;
-              
-              svg {       
+
+              svg {
                 font-size: 1em;
-                fill: #404E4E;
+                fill: $gris-oscuro;
                 margin-right: 10px;
-      
+
                 &:hover {
-                  fill: #3b5998;
+                  fill: $azul;
                 }
               }
             }
-      
-            .popUp{ 
+
+            .popUp {
               display: flex;
               justify-content: center;
               align-items: center;
               flex-direction: row;
               width: 100%;
               height: 100%;
-              background-color: #fff;
+              background-color: $blanco;
               padding: 20px;
               border-radius: 20px;
-              margin:0 20% 0 0;
-              
-              div
-              .productImg {
-                padding-top: auto;  
+              margin: 0 20% 0 0;
+
+              div .productImg {
+                padding-top: auto;
                 text-align: center;
                 max-width: 100%;
-                }
-              div{
-                h2{
+              }
+              div {
+                h2 {
                   font-size: 32px;
                   line-height: 46px;
                   font-weight: 700;
                   margin: 20px 0;
                 }
- 
-                h3{
+
+                h3 {
                   font-size: 28px;
                   line-height: 32px;
                   font-weight: 500;
                   margin: 22px 0;
                 }
 
-                p{
+                p {
                   font-size: 16px;
                   line-height: 22px;
                   font-weight: 500;
                   margin: 14px 0;
                 }
-              }  
-      
+              }
+
               .popUp-SocialItem {
                 display: flex;
                 justify-content: flex-start;
                 gap: 20px;
                 margin-bottom: 20px;
-      
+
                 .facebookIcon {
                   svg {
                     border-radius: 40%;
                     font-size: 2em;
-                    fill: #404E4E;
+                    fill: $gris-oscuro;
                     margin-right: 10px;
-        
+
                     &:hover {
-                      fill: #3b5998;
+                      fill: $azul;
                     }
                   }
                 }
-        
+
                 .instagramIcon {
                   svg {
-                    background-color: #404E4E;
-                    border-radius: 30%; 
+                    background-color: $gris-oscuro;
+                    border-radius: 30%;
                     font-size: 2em;
-                    fill: #fff;
+                    fill: $blanco;
                     margin-left: 10px;
                     margin-right: 10px;
-        
+
                     &:hover {
-                      background-color: #e95950;
-                      fill: #fff;
+                      background-color: $rojo;
+                      fill: $blanco;
                     }
                   }
                 }
-                
+
                 .whastsappIcon {
                   svg {
-                    background-color: #404E4E;
-                    border-radius: 30%; 
+                    background-color: $gris-oscuro;
+                    border-radius: 30%;
                     font-size: 2em;
-                    fill: #fff;
+                    fill: $blanco;
                     margin-left: 10px;
-        
+
                     &:hover {
-                      background-color: #00bb2d;;
-                      fill: #fff;
+                      background-color: $verde-claro;
+                      fill: $blanco;
                     }
                   }
                 }
               }
             }
           }
-        } 
-      } 
-    } 
-  } 
-} 
- 
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
-  .products-Container
-  .cards-products {
+  .products-Container .cards-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    .itemContainer{
-      .popUp-container
-      .popUp-Body      
-      .popUp-content{                                
-        .close{
+    .itemContainer {
+      .popUp-container .popUp-Body .popUp-content {
+        .close {
           right: -18px;
           top: 8px;
         }
-    
+
         .popUp {
-           margin-left: -2%;
-        } 
-      }             
-    }     
-  } 
-} 
+          margin-left: -2%;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1000px) {
-  .products-Container
-  .cards-products
-  .itemContainer
-  .popUp-container{
-    .popUp-Body{
+  .products-Container .cards-products .itemContainer .popUp-container {
+    .popUp-Body {
       max-width: 750px;
       max-height: 100%;
       overflow-y: auto;
-      
-      
-      
-      .popUp-content{
+
+      .popUp-content {
         padding: 0 20px;
-        
-        background-color:  none;
-        .close{
+
+        background-color: none;
+        .close {
           right: 0;
           top: 8px;
         }
-        
+
         .popUp {
           margin-left: -2.5%;
-          
-        div{
-          h2{
-            font-size: 26px;
-            line-height: 36px;
-          }
 
-          h3{
-            font-size: 22px;
-            line-height: 26px;
-          }
+          div {
+            h2 {
+              font-size: 26px;
+              line-height: 36px;
+            }
 
-          p{
-            font-size: 14px;
-            line-height: 18px;
+            h3 {
+              font-size: 22px;
+              line-height: 26px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 18px;
+            }
           }
-        }  
-      } 
+        }
+      }
     }
-    }     
-  }  
- } 
+  }
+}
 
 @media screen and (max-width: 800px) {
   .products-Container {
-    .productsHeader-Container{ 
+    .productsHeader-Container {
       display: block;
-      text-align: center;   
+      text-align: center;
 
-      .headline-Products { 
+      .headline-Products {
         margin: 0 auto;
-        width: 100%; 
-      } 
-   
-      .headline-Image{ 
-        img{ 
-          width: 100%; 
+        width: 100%;
+      }
+
+      .headline-Image {
+        img {
+          width: 100%;
         }
-     }
-    } 
- 
-    .cards-products { 
-      display: flex; 
-      flex-direction: column; 
+      }
+    }
+
+    .cards-products {
+      display: flex;
+      flex-direction: column;
       justify-content: space-around;
       width: 100%;
 
-      .itemContainer{
-        .card{
+      .itemContainer {
+        .card {
           padding: 10px;
         }
-        .popUp-container{
+        .popUp-container {
           padding-top: 150px;
 
-          .popUp-Body{
+          .popUp-Body {
             max-width: 600px;
-                        
-            .popUp-content{                                
+
+            .popUp-content {
               .popUp {
                 margin-left: -3.5%;
 
-                div
-                .productImg { 
+                div .productImg {
                   max-width: 200px;
                 }
 
-                div{
-                  h2{
+                div {
+                  h2 {
                     font-size: 24px;
                     line-height: 36px;
                     margin: 16px 0;
                   }
-        
-                  h3{
+
+                  h3 {
                     font-size: 20px;
                     line-height: 26px;
                     margin: 18px 0;
                   }
-        
-                  p{
+
+                  p {
                     font-size: 12px;
                     line-height: 18px;
                     margin: 10px 0;
                   }
-                }  
-              }         
+                }
+              }
             }
           }
         }
-      } 
-    }     
-  } 
-} 
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 650px) {
   .products-Container {
-    .productsHeader-Container{ 
+    .productsHeader-Container {
       display: block;
-      text-align: center;     
+      text-align: center;
 
-      .headline-Products { 
+      .headline-Products {
         margin: 0 auto;
-        width: 100%; 
-      } 
-   
-      .headline-Image{ 
-        img{ 
-          width: 100%; 
+        width: 100%;
+      }
+
+      .headline-Image {
+        img {
+          width: 100%;
         }
-     }
-    } 
- 
-    .cards-products { 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: space-around;    
+      }
+    }
+
+    .cards-products {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       width: 100%;
 
-      .itemContainer
-      .popUp-container{
+      .itemContainer .popUp-container {
         padding-top: 120px;
-        .popUp-Body{
+        .popUp-Body {
           max-width: 280px;
           max-height: 100%;
-      
-          .popUp-content{                                
-            .close{
+
+          .popUp-content {
+            .close {
               right: 12px;
               top: 2px;
 
-              svg {       
+              svg {
                 font-size: 0.8em;
               }
             }
-      
+
             .popUp {
               display: flex;
               justify-content: center;
               flex-direction: column;
               align-items: center;
-              width: 100%; 
+              width: 100%;
               height: 100%;
               text-align: center;
               background-color: #fff;
               padding: 10px;
               border-radius: 20px;
               margin-left: -5%;
-          
-              div
-              .productImg { 
+
+              div .productImg {
                 max-width: 100px;
               }
 
-              div{
-                h2{
+              div {
+                h2 {
                   font-size: 20px;
                   line-height: 26px;
                   margin: 5px 0;
                 }
-      
-                h3{
+
+                h3 {
                   font-size: 16px;
                   line-height: 20px;
                   margin: 5px 0;
                 }
-      
-                p{
+
+                p {
                   font-size: 11px;
                   line-height: 16px;
                   margin: 4px 0;
@@ -435,16 +431,16 @@
                 margin: 0;
                 .facebookIcon,
                 .instagramIcon,
-                .whastsappIcon{
-                  svg{
+                .whastsappIcon {
+                  svg {
                     font-size: 1.2em;
                   }
                 }
-              }  
-            }         
+              }
+            }
           }
-        }       
-      } 
-    }     
-  }   
-}   
+        }
+      }
+    }
+  }
+}

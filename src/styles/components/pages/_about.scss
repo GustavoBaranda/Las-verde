@@ -34,7 +34,7 @@
 }
 
 .nosotros-second {
-  background-color: rgba(225, 225, 225, 0.424);
+  background-color: $gris-claro;
   padding-bottom: 50px;
   padding-top: 30px;
   display: grid;
@@ -111,7 +111,8 @@
     text-align: center;
 
     img {
-      margin: 20px 0;
+      width: 70%;
+      margin-top: 5 0px;
     }
   }
 }

@@ -1,0 +1,54 @@
+//Paleta de colores
+$blanco: #ffffff;
+$gris-oscuro: #404e4e;
+$gris-claro: #ebebeb;
+$verde-claro: #089547;
+$verde-transparente: #089547b4;
+$violeta: #787da7;
+$azul: #3b5998;
+$rojo: #e95950;
+
+//Estilos generales
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn-basic {
+  background-color: $verde-claro;
+  border-color: $verde-claro;
+  color: $blanco;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 10px 50px;
+  transition: 1000ms;
+  cursor: pointer;
+  font-family: Poppins;
+
+  &:hover {
+    transition: 1000ms;
+    background-color: $verde-transparente;
+  }
+}
+
+.centrar {
+  display: flex;
+  align-items: center;
+}
+
+//Imports
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
+@import "./components/navBar";
+@import "./components/footer";
+@import "./components/whatsApp";
+@import "./components/pages/about";
+@import "./components/pages/contacts";
+@import "./components/pages/home";
+@import "./components/pages/products";
