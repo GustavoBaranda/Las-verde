@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import FadeLoader from "react-spinners/FadeLoader";
 import { productsCollection } from "../../../utils/firebase";
 import { getDocs } from "firebase/firestore";
 import ProductHeader from "./ProductHeader";
@@ -9,6 +10,7 @@ const ItemList = () => {
   const [popUpContent, setPopUpContent] = useState([]);
   const [popUpTogle, setPopUpTogle] = useState(false);
   const [styling, setStyling] = useState(null);
+  const [load, setLoad] = useState(false);
 
   const changeContent = (product) => {
     setPopUpContent([product]);
@@ -36,6 +38,7 @@ const ItemList = () => {
         });
 
         setProductsList(products);
+        setLoad(true);
       })
       .catch((err) => {
         console.log(err);
@@ -45,19 +48,25 @@ const ItemList = () => {
   return (
     <div className="products-Container" style={styling}>
       <ProductHeader />
-      <div className="cards-products">
-        {productsList.map((product) => {
-          return (
-            <Item
-              product={product}
-              key={product.id}
-              popUpContent={popUpContent}
-              changeContent={changeContent}
-              popUpTogle={popUpTogle}
-            />
-          );
-        })}
-      </div>
+      {load ? (
+        <div className="cards-products">
+          {productsList.map((product) => {
+            return (
+              <Item
+                product={product}
+                key={product.id}
+                popUpContent={popUpContent}
+                changeContent={changeContent}
+                popUpTogle={popUpTogle}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div className="spinner">
+          <FadeLoader />
+        </div>
+      )}
     </div>
   );
 };
