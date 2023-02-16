@@ -1,11 +1,14 @@
 .navBar {
-  @extend .centrar;
-  justify-content: space-evenly;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
   background-color: $blanco;
+  font-family: Poppins;
+  margin-bottom: 50px;
   position: fixed;
   top: 0px;
   z-index: 1000;
