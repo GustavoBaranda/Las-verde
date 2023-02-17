@@ -1,9 +1,8 @@
-import React from "react";
+import React from "react"; 
 import Slider from "./Slider";
 import FirstBannerHome from "./FirstBannerHome";
 import SecondBannerHome from "./SecondBannerHome";
 import ThirdBannerHome from "./ThirdBannerHome";
-
 
 const Home = () => {
   return (
@@ -13,7 +12,7 @@ const Home = () => {
       <SecondBannerHome />
       <ThirdBannerHome />
     </div>
-  );
-};
+  ); 
+}; 
 
 export default Home;

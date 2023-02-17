@@ -107,21 +107,30 @@
         max-width: 400px;
         display: flex;
         flex-direction: column;
-      }
-
-      input,
-      textarea {
-        border: none;
-        border-radius: 10px;
-        margin: 10px 0px;
-      }
-
-      input {
-        height: 3em;
-      }
-
-      textarea {
-        height: 6em;
+        input,
+        textarea {
+          border: none;
+          border-radius: 10px;
+          margin: 10px 0px 6px 0px;
+        }
+  
+        input {
+          height: 3em;
+        }
+  
+        textarea {
+          height: 6em;
+          font-family: inherit;
+        }
+        p{
+          font-size: 12px;
+          font-weight: bold;
+          color: #dc3545;
+          margin: 0;
+        }
+        button{
+          margin-top: 10px;
+        }
       }
     }
   }

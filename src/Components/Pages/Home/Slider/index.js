@@ -38,24 +38,24 @@ const Slider = ()=> {
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj) => {
+            {dataSlider.map(( item ) => {
                 return (
                     <div
-                        key={obj.id}
-                        className={slideIndex === obj.id ? "slide active-anim" : "slide"}
+                        key={ item.id }
+                        className={slideIndex === item.id ? "slide active-anim" : "slide"}
                     >   
                         <div className="tittleSliderContainer">
-                            <h2>{obj.title}</h2>
+                            <h2>{ item.title }</h2>
                         </div>
                         <div className="subTittleSliderContainer">
-                            <h4>{obj.subTitle}</h4>
+                            <h4>{ item.subTitle }</h4>
                         </div>
                         <div className="btn-container">    
                             <Link to="/detail">
                                 <button className="btn-basic btn-slider">CONOCE MÁS {'>'} </button>
                             </Link>
                         </div>
-                        <img src={obj.img} alt="{obj.textimg}" />
+                        <img src={ item.img } alt={ item.textimg } />
                     </div>
                 )
             })}

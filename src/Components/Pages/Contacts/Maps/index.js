@@ -11,6 +11,7 @@ const Maps = () => {
         loading="lazy" 
         referrerPolicy="no-referrer-when-downgrade"
         className="maps" 
+        title="Map"
       />
       <div className="contactLocation-info">
         <h2>

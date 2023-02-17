@@ -6,12 +6,14 @@ import About from "./Components/Pages/About";
 import Contacts from "./Components/Pages/Contacts";
 import WhatsApp from "./Components/WhatsApp";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 import "./styles/main.scss";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route exact path="/products" element={<ItemList />} />
