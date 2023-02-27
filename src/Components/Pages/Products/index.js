@@ -5,7 +5,7 @@ import { getDocs } from "firebase/firestore";
 import ProductHeader from "./ProductHeader";
 import Item from "./Item";
 
-const ItemList = () => {
+const Products = () => {
   const [productsList, setProductsList] = useState([]);
   const [popUpContent, setPopUpContent] = useState([]);
   const [popUpTogle, setPopUpTogle] = useState(false);
@@ -70,4 +70,4 @@ const ItemList = () => {
     </div>
   );
 };
-export default ItemList;
+export default Products;

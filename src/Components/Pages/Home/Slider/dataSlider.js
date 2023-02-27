@@ -7,29 +7,33 @@ const dataSlider = [
   {
     id: 1,
     img: img1,
-    title: "Descubre los nuevos sabores que tenemos para ti.",
-    subTitle: "Llega el verano y en Las Verde llegan nuevos sabores para que puedas disfrutar de esta temporada.",
+    title: "Lo simple,",
+    subTitle: "lo natural.",
+    text: "Una manera simple, rica y saludable de consumir frutas y verduras.",
     textimg:"corrousel1"
   },
   {
     id: 2,
     img: img2,
-    title: "Descubre los nuevos sabores que tenemos para ti.",
-    subTitle: "Llega el verano y en Las Verde llegan nuevos sabores para que puedas disfrutar de esta temporada.",
+    title: "Súmate al", 
+    subTitle: "desafío Detox",
+    text: "Depurá y renová el oxígeno de tu cuerpo y mente.",
     textimg:"corrousel2"
   },
   {
     id: 3,
     img: img3,
-    title: "Descubre los nuevos sabores que tenemos para ti.",
-    subTitle: "Llega el verano y en Las Verde llegan nuevos sabores para que puedas disfrutar de esta temporada.",
+    title: "La naturaleza en", 
+    subTitle: "nuestros jugos.",
+    text: "Frutas y verduras seleccionadas con un estricto control de calidad para brindarte solo lo mejor.",
     textimg:"corrousel3"
   },
   {
     id: 4,
     img: img4,
-    title: "Descubre los nuevos sabores que tenemos para ti.",
-    subTitle: "Llega el verano y en Las Verde llegan nuevos sabores para que puedas disfrutar de esta temporada.",
+    title: "Hacé tu pedido",
+    subTitle: "saludable de la semana.",
+    text: "Contáctanos a través de todos los medios disponibles que tenemos para vos.",
     textimg:"corrousel4"
   },
 ];

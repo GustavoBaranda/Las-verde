@@ -6,7 +6,7 @@ import dataSlider from './dataSlider';
 const Slider = ()=> {
 
     const [slideIndex, setSlideIndex] = useState(1)
-
+  
     useEffect(() => {
         const interval = setInterval(() => {
             setSlideIndex(slideIndex ===  dataSlider.length ? 1 : slideIndex + 1);
@@ -36,6 +36,9 @@ const Slider = ()=> {
         setSlideIndex(index)
     }
 
+
+
+
     return (
         <div className="container-slider">
             {dataSlider.map(( item ) => {
@@ -44,14 +47,15 @@ const Slider = ()=> {
                         key={ item.id }
                         className={slideIndex === item.id ? "slide active-anim" : "slide"}
                     >   
-                        <div className="tittleSliderContainer">
+                        <div className="tittleSliderContainer">                        
                             <h2>{ item.title }</h2>
+                            <h2>{ item.subTitle }</h2>
                         </div>
                         <div className="subTittleSliderContainer">
-                            <h4>{ item.subTitle }</h4>
+                            <h3>{ item.text }</h3>
                         </div>
                         <div className="btn-container">    
-                            <Link to="/detail">
+                            <Link to="/products">
                                 <button className="btn-basic btn-slider">CONOCE MÁS {'>'} </button>
                             </Link>
                         </div>

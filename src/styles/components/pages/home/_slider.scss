@@ -23,16 +23,29 @@
     }
 
     .tittleSliderContainer {
-      max-width: 350px;
+      max-width: 100%;
       color: $blanco;
       font-weight: bold;
       position: absolute;
       top: 25%;
       left: 6%;
+      
+      h2{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 46px;
+        margin: 0
+      }
+
+      h3{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+      }
     }
 
     .subTittleSliderContainer {
-      max-width: 400px;
+      max-width: 500px;
       color: $blanco;
       font-weight: bold;
       position: absolute;
@@ -46,6 +59,13 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  .blanco{
+    color: $blanco;
+  }
+  .gris{
+    color: $gris-oscuro;
   }
 
   .active-anim {
