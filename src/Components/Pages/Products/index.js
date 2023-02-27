@@ -22,8 +22,7 @@ const Products = () => {
     } else {
       setStyling(null);
     }
-    console.log(product);
-  };
+   };
 
   useEffect(() => {
     const query = getDocs(productsCollection);

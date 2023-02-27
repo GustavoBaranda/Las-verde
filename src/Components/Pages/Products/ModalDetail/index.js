@@ -30,7 +30,7 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                       <h2>{pop.title}</h2> 
                       <h3>Descripción</h3>
                       <p>{pop.description}</p>
-                      <h3>Formatos</h3>
+                      <h3>Presentaciones</h3>
                       <div className="presentations">                        
                         <p className="btn-basic">500ml</p>
                         <p className="btn-basic">250ml</p>
