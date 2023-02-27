@@ -139,6 +139,7 @@
                 text-align: center;
                 max-width: 100%;
               }
+
               div {
                 h2 {
                   font-size: 32px;
@@ -160,6 +161,12 @@
                   font-weight: 500;
                   margin: 14px 0;
                 }
+              }
+
+              .presentations{
+                display: flex;
+                justify-content: start;
+                gap: 20px;
               }
 
               .popUp-SocialItem {

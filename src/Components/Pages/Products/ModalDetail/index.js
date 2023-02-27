@@ -30,6 +30,11 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                       <h2>{pop.title}</h2> 
                       <h3>Descripción</h3>
                       <p>{pop.description}</p>
+                      <h3>Formatos</h3>
+                      <div className="presentations">                        
+                        <p className="btn-basic">500ml</p>
+                        <p className="btn-basic">250ml</p>
+                      </div>
                       <img src={ barra } alt="barra" />
                       <h3>Compartir</h3>
                       <div className="popUp-SocialItem">
