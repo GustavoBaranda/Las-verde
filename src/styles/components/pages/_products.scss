@@ -87,9 +87,6 @@
       .popUp-container {
         display: grid;
         place-content: center;
-        // flex-direction: row;
-        // justify-content: center;
-        // padding-top: 120px;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -146,21 +143,21 @@
                   font-size: 32px;
                   line-height: 46px;
                   font-weight: 700;
-                  margin: 20px 0;
+                  margin: 16px 0;
                 }
 
                 h3 {
                   font-size: 28px;
                   line-height: 32px;
                   font-weight: 500;
-                  margin: 22px 0;
+                  margin: 18px 0;
                 }
 
                 p {
                   font-size: 16px;
                   line-height: 22px;
                   font-weight: 500;
-                  margin: 14px 0;
+                  margin: 10px 0;
                 }
               }
 
@@ -234,14 +231,17 @@
     grid-template-columns: repeat(2, 1fr);
 
     .itemContainer {
-      .popUp-container .popUp-Body .popUp-content {
-        .close {
-          right: -18px;
-          top: 8px;
-        }
+      .popUp-container {
+        padding-top: 100px;
+        .popUp-Body .popUp-content {
+          .close {
+            right: -18px;
+            top: 8px;
+          }
 
-        .popUp {
-          margin-left: -2%;
+          .popUp {
+            margin-left: -2%;
+          }
         }
       }
     }
@@ -271,16 +271,19 @@
             h2 {
               font-size: 26px;
               line-height: 36px;
+              margin: 16px 0;
             }
 
             h3 {
               font-size: 22px;
               line-height: 26px;
+              margin: 18px 0;
             }
 
             p {
               font-size: 14px;
               line-height: 18px;
+              margin: 10px 0;
             }
           }
         }
@@ -391,8 +394,7 @@
       width: 100%;
 
       .itemContainer .popUp-container {
-        // padding-top: 250px;
-        
+        padding-top: 200px;
         .popUp-Body {
           max-width: 350px;
           max-height: 100%;
@@ -428,20 +430,14 @@
 
               div {
                 h2 {
-              //     font-size: 20px;
-              //     line-height: 26px;
-                  margin: 5px 0;
+                   margin: 5px 0;
                 }
 
                 h3 {
-              //     font-size: 16px;
-              //     line-height: 20px;
                   margin: 5px 0;
                 }
 
                 p {
-              //     font-size: 11px;
-              //     line-height: 16px;
                   margin: 4px 0;
                 }
               }
