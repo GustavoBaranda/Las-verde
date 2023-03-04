@@ -106,30 +106,98 @@
         padding: 0 5%;
         max-width: 400px;
         display: flex;
-        flex-direction: column;
-        input,
-        textarea {
-          border: none;
-          border-radius: 10px;
-          margin: 10px 0px 6px 0px;
-        }
-  
-        input {
-          height: 3em;
-        }
-  
-        textarea {
-          height: 6em;
-          font-family: inherit;
-        }
-        p{
-          font-size: 12px;
-          font-weight: bold;
-          color: #dc3545;
-          margin: 0;
-        }
+        flex-direction: column;      
+    
         button{
           margin-top: 10px;
+        }
+
+        .input-container{
+          position: relative;
+          margin: 10px 0px 15px 0px;
+          margin-right: 8%;
+
+          .label{
+            position: absolute;
+            left: 10px;
+            top: 14px;
+            transition: all .2s;
+            padding: 0 2px;
+            z-index: 1;
+            color: $gris-oscuro;
+          }
+
+          .text-input{
+            font-family: inherit;
+            width: 100%;
+            padding: 0.8em ;
+            border: 2px solid $gris-claro ;
+            background: #fff;
+            border-radius: 10px;
+            font-size:  18px;
+            outline: none;
+            transition: all .3s;
+            color: $gris-oscuro;
+          }
+
+          .label::before {
+            content: "";
+            height: 5px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 100%;
+            z-index: -1;
+          }
+          
+          .text-input:focus {
+            border: 2px solid $verde-claro;
+          }
+
+          .text-input:focus+.label, 
+          .text-input:valid+.label,
+          .filled{
+           top: -12px; 
+           padding: 0 2px;;
+
+           color: $verde-claro;
+           font-size: 18px;
+          }        
+
+          .text-input::placeholder {
+            font-size: 16px;
+            opacity: 0;
+            transition: all .3s;
+          }
+
+          .text-input:focus::placeholder {
+            opacity: 1;
+            animation-delay: 0.2s;
+          }
+
+          textarea {
+            height: 6em;
+            resize: none;
+          }
+
+          .errorMessage {
+            bottom: -20px;
+            position: absolute;
+            font-size: 12px;
+            font-weight: bold;
+            color: #dc3545;
+            margin: 0;
+          }
+
+          .errorMessage-textArea{
+            bottom: -16px;
+            position: absolute;
+            font-size: 12px;
+            font-weight: bold;
+            color: #dc3545;
+            margin: 0;
+          }
         }
       }
     }
@@ -249,6 +317,11 @@
     .contactLocation-Container {
       .contactLocation-maps {
         gap: 10px;
+
+        .maps{
+          max-width: 100%;
+        }
+
         .contactLocation-info {
           h2 {
             width: 100%;

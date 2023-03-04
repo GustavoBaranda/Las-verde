@@ -1,0 +1,36 @@
+.successContainer {
+    padding: 150px 0;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    place-content: center;
+    
+    .success{
+      width: 100%;
+       
+      .successContent{
+        padding-bottom: 50px;
+  
+        h1{
+          font-size: 36px;
+          line-height: 46px;
+          font-weight: bold;
+        }
+        
+        h3 {
+          padding-top: 50px;
+          font-size: 20px;
+          line-height: 46px;
+          font-weight: bold; 
+        }
+      
+        img {
+          padding-top: 50px;
+          margin: 0 5%;
+          width: 100%;
+          max-width: 350px;
+        }
+      }
+    }
+  }

@@ -4,6 +4,7 @@ import TextForm from "./TextForm";
 import Maps from "./Maps";
  
 const Contacts = () => { 
+
   return ( 
     <div className="contacts-container">
       <div className="contactInfo-container"> 

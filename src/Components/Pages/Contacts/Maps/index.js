@@ -10,18 +10,7 @@ const Maps = () => {
         allowFullScreen="" 
         loading="lazy" 
         referrerPolicy="no-referrer-when-downgrade"
-        className="maps" 
-
-
-
-
-
-
-
-
-
-
-        
+        className="maps"         
         title="Map"
       />
       <div className="contactLocation-info">
@@ -41,5 +30,4 @@ const Maps = () => {
     </div>
   )
 }
-
 export default Maps;

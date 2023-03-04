@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const useForm = ( initialData, onValidate ) => {
     const [data, setData] = useState( initialData );
     const [errors, setErrors ] = useState({})
     const [loading, setLoading] = useState(false);
     const [response, setResponse] = useState(null);
+
+    let navigate = useNavigate()
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -21,7 +24,7 @@ export const useForm = ( initialData, onValidate ) => {
     
         if( Object.keys(err).length === 0 ) {
           setLoading(true)
-          console.log(data)
+          // console.log(data)
           fetch("https://formsubmit.co/ajax/baranda.gustavo@gmail.com", {
             method: "POST",
             headers: { 
@@ -31,10 +34,10 @@ export const useForm = ( initialData, onValidate ) => {
             body: JSON.stringify(data)
         })
             .then((response) => {
-                console.log(response)
                 setLoading(false);
                 setResponse(true);
                 setData(initialData);
+                navigate("/contacts/successfulmessage")
                 setTimeout(() => setResponse(false),5000)
             })
             .catch(error => console.log(error));
@@ -51,3 +54,4 @@ export const useForm = ( initialData, onValidate ) => {
         handleSubmit 
       }
 }
+

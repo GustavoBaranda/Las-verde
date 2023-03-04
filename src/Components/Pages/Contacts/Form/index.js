@@ -1,5 +1,6 @@
 import { useForm } from '../../../../hooks/useForm';
 
+
 const initialData = {
    Name: "", 
    Phone: "", 
@@ -53,53 +54,72 @@ const Form = () => {
 
   return (
     <div className="form-container">
-      <form onSubmit={ handleSubmit } >
-          <label htmlFor="name">Nombre</label>
+      <form onSubmit={ handleSubmit } utocomplete="off">
+        <div className="input-container">
           <input 
+            className='text-input'
+            placeholder='Ingrese su nombre'
             type="text" 
             name="Name" 
             value={ data.Name }
             onChange={ handleChange }
+            required
           />
+          <label className='label' htmlFor="name">Nombre</label>
+          {errors.Name &&<p  className='errorMessage'>{errors.Name}</p>}
+        </div>
 
-          {errors.Name &&<p>{errors.Name}</p>}
-
-          <label htmlFor="phone">Teléfono</label>
+        <div className="input-container">
           <input 
+            className='text-input'
+            placeholder='Ingrese su telefono'
             type="tel" 
             name="Phone" 
             value={data.Phone} 
             onChange={ handleChange }
+            required
           />
+          <label className='label' htmlFor="phone">
+            Teléfono
+          </label>
+          {errors.Phone &&<p className='errorMessage'>{errors.Phone}</p>}
+        </div>
 
-          {errors.Phone &&<p>{errors.Phone}</p>}
-
-          <label htmlFor="email">Email</label>
+        <div className="input-container">
           <input 
-            type="email" 
+            required
+            className='text-input'
+            placeholder='Ingrese su correo electrónico'
+            type="text" 
             name="Email" 
             value={ data.Email } 
             onChange={ handleChange }
           />
-
-          {errors.Email &&<p>{errors.Email}</p>}
-
-          <label htmlFor="message">Mensaje</label>
+          <label className='label' htmlFor="email">
+            Email
+          </label>
+          {errors.Email &&<p className='errorMessage'>{errors.Email}</p>}
+        </div>
+        <div className="input-container">
           <textarea
+            className='text-input'
+            placeholder='Ingrese un mensaje'
             name="Message"
             cols="40"
             rows="10"
             maxLength="250"
             value={ data.Message }
             onChange={ handleChange }
+            required
           />
+          <label className='label' htmlFor="message">Mensaje</label>
 
-            {errors.Message &&<p>{errors.Message}</p>}
-
+            {errors.Message &&<p className='errorMessage-textArea'>{errors.Message}</p>}
+          </div>
           <button type="submit" className="btn-basic" disabled={loading} >{loading
-          ? 'loading...' : 'Enviar' }</button>
+          ? 'Enviando...' : 'Enviar' }</button>
 
-          {response&&<p>mensaje exitoso</p>}
+          {response&&<p className='errorMessage'>El mensaje fue enviado con exito!!!</p>}
       </form>
     </div>
   )

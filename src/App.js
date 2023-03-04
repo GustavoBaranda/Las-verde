@@ -8,6 +8,7 @@ import WhatsApp from "./Components/WhatsApp";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 import "./styles/main.scss";
+import SuccessfulMessage from "./Components/Pages/Contacts/SuccessfulMessage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/products" element={<Products />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contacts" element={<Contacts />} />
+          <Route exact path="/contacts/successfulmessage" element={<SuccessfulMessage />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

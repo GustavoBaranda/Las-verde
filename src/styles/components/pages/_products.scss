@@ -94,16 +94,15 @@
         right: 0;
         background-color: rgba(0, 0, 0, 0.3);
         padding: 0 50px;
-        overflow-x: hidden;
-        overflow-y: scroll;
-                    
+                 
         .popUp-Body {
-          width: 960px;
-          height: 600px;
-
+          margin-left: -2.5%;
+          max-width: 960px;
+          max-height: 100%; 
+          
           .popUp-content {
             position: relative;
-  
+            
             .close {
               position: absolute;
               font-size: 30px;
@@ -124,6 +123,7 @@
             }
 
             .popUp {
+              
               display: flex;
               justify-content: center;
               align-items: center;
@@ -254,9 +254,8 @@
 @media screen and (max-width: 1000px) {
   .products-Container .cards-products .itemContainer .popUp-container {
     .popUp-Body {
-      max-width: 750px;
-      max-height: 100%;
-      overflow-y: auto;
+      // max-width: 750px;
+      // max-height: 100%; 
 
       .popUp-content {
         padding: 0 20px;
@@ -327,7 +326,7 @@
           padding-top: 220px;
 
           .popUp-Body {
-            max-width: 600px;
+            // max-width: 600px;
 
             .popUp-content {
               .close {
@@ -397,10 +396,10 @@
       width: 100%;
 
       .itemContainer .popUp-container {
-        padding-top: 200px;
+        padding-top: 150px;
         .popUp-Body {
-          max-width: 350px;
-          max-height: 100%;
+          // max-width: 350px;
+          // max-height: 100%;
 
           .popUp-content {
             .close {

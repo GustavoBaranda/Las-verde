@@ -13,7 +13,7 @@ const SecondBannerHome = () => {
         </div>
         <div className="btn-container">    
             <Link to="/detail">
-                <button className="btn-basic btn-slider">CONOCE MÁS</button> 
+                <button className="btn-basic">CONOCE MÁS</button> 
             </Link>
         </div>
         <img src={secondBannerHome} alt="secondBannerHome" />

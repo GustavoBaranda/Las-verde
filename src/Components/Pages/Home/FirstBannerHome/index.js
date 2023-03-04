@@ -21,7 +21,7 @@ const FirstBannerHome = () => {
       </div> 
       <div className="firstBannerHome-btnContainer"> 
         <Link to="/products"> 
-          <button className="btn-basic btn-slider">VER PRODUCTOS</button> 
+          <button className="btn-basic">VER PRODUCTOS</button> 
         </Link> 
       </div> 
     </div> 
