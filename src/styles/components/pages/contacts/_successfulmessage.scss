@@ -6,31 +6,59 @@
     display: grid;
     place-content: center;
     
+  .success{
+    width: 100%;
+      
+    .successContent{
+      padding-bottom: 50px;
+
+      h1{
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: bold;
+      }
+      
+      h3 {
+        padding-top: 50px;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 500; 
+      }
+    
+      img {
+        padding-top: 50px;
+        margin: 0 5%;
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
     .success{
-      width: 100%;
-       
       .successContent{
         padding-bottom: 50px;
   
         h1{
-          font-size: 36px;
+          font-size: 24px;
           line-height: 46px;
           font-weight: bold;
         }
         
         h3 {
           padding-top: 50px;
-          font-size: 20px;
-          line-height: 46px;
-          font-weight: bold; 
+          margin: 0 5%;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 500; 
         }
       
         img {
           padding-top: 50px;
           margin: 0 5%;
           width: 100%;
-          max-width: 350px;
+          max-width: 280px;
         }
       }
-    }
-  }
+    }  
+  }      
+}
