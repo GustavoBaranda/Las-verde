@@ -36,9 +36,6 @@ const Slider = ()=> {
         setSlideIndex(index)
     }
 
-
-
-
     return (
         <div className="container-slider">
             {dataSlider.map(( item ) => {

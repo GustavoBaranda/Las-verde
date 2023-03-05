@@ -1,6 +1,5 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom'; 
-import barra from '../../../../assets/barra.png'; 
 import { 
   FaFacebook,  
   FaInstagram, 
@@ -9,6 +8,10 @@ import {
 } from "react-icons/fa"; 
  
 const ModalDetail = ({popUpContent, changeContent}) => {
+
+  let barra = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Imagenes%2Fbarra.png?alt=media&token=6d6638b1-03b0-411e-89c2-47e0749077e4"
+
+
   return (
     <div className="popUp-container" onClick={changeContent}>
         <div className="popUp-Body" onClick={(e) => e.stopPropagation()}>
