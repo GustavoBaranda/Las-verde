@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import FadeLoader from "react-spinners/FadeLoader";
+import Spinner from "../../Spinner";
 import { productsCollection } from "../../../utils/firebase";
 import { getDocs } from "firebase/firestore";
 import ProductHeader from "./ProductHeader";
@@ -63,7 +63,7 @@ const Products = () => {
         </div>
       ) : (
         <div className="spinner">
-          <FadeLoader />
+          <Spinner />
         </div>
       )}
     </div>

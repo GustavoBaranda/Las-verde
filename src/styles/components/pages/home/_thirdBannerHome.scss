@@ -1,64 +1,57 @@
 .thirdBannerHomeContainer {
-  margin: 0 auto;
-  top: 5px;
-  bottom: 100px;
-  display: block;
-  justify-content: center;
-  align-items: center;
+  @include flexible(block, center, center);
+  @include position(5px, none, 100px, none);
+  position: relative;
+  text-align: right;
   width: 100%;
   height: 620px;
-  text-align: right;
-  position: relative;
 
   .thirdBannerHome-title {
-    max-width: 350px;
-    color: $blanco;
-    font-weight: bold;
+    @include font(28px, 40px, bold);
+    @include position(25%, 8%, none, none);
     position: absolute;
-    top: 25%;
-    right: 8%;
+    max-width: 600px;
+    color: $white;
   }
 
   .thirdBannerHome-SubTittle {
-    max-width: 450px;
-    color: $blanco;
-    font-weight: bold;
+    @include font(20px, 22px, bold);
+    @include position(45%, 8%, none, none);
     position: absolute;
-    top: 45%;
-    right: 8%;
+    max-width: 600px;
+    color: $white;
   }
 
   .thirdBannerHome-socialItem {
+    @include position(none, 8%, 25%, none);
     position: absolute;
-    bottom: 25%;
-    right: 8%;
 
     .facebookIcon {
       svg {
-        background-color: $azul;
+        background-color: $facebook;
         border-radius: 50%;
         font-size: 2em;
-        fill: $blanco;
+        fill: $white;
         margin: 20px;
 
         &:hover {
-          background-color: $blanco;
-          fill: $azul;
+          background-color: $white;
+          fill: $facebook;
         }
       }
     }
 
     .instagramIcon {
       svg {
-        background-color: $rojo;
+        background-color: $instagram;
         border-radius: 30%;
         font-size: 2em;
-        fill: $blanco;
+        fill: $white;
         margin: 20px;
 
         &:hover {
-          background-color: $blanco;
-          fill: $rojo;
+          background-color: $white;
+          fill: $instagram;
         }
       }
     }
@@ -70,28 +63,24 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 650px) {
     text-align: center;
 
     .thirdBannerHome-title {
-      top: 25%;
-      right: 0;
-      left: 0;
+      @include font(24px, 46px, bold);
+      @include position(25%, 0, none, 0);
       margin: auto;
     }
 
     .thirdBannerHome-SubTittle {
-      top: 45%;
-      right: 0;
-      left: 0;
+      @include font(18px, 22px, 500);
+      @include position(50%, 0, none, 0);
       margin: auto;
     }
 
     .thirdBannerHome-socialItem {
+      @include position(75%, 0, none, 0);
       text-align: center;
-      top: 75%;
-      right: 0;
-      left: 0;
     }
   }
 }

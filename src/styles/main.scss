@@ -1,12 +1,21 @@
-//Paleta de colores
-$blanco: #ffffff;
-$gris-oscuro: #404e4e;
-$gris-claro: #ebebeb;
-$verde-claro: #089547;
-$verde-transparente: #089547b4;
-$violeta: #787da7;
-$azul: #3b5998;
-$rojo: #e95950;
+//Imports
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
+@import "./defaultStyles/colorPalette";
+@import "./defaultStyles/mixins";
+@import "./defaultStyles/button";
+@import "./components/navBar";
+@import "./components/footer";
+@import "./components/whatsApp";
+@import "./components/pages/about";
+@import "./components/pages/contacts/contacts";
+@import "./components/pages/contacts/successfulmessage";
+@import "./components/pages/home";
+@import "./components/pages/home/slider";
+@import "./components/pages/home/firstBannerHome";
+@import "./components/pages/home/secondBannerHome";
+@import "./components/pages/home/thirdBannerHome";
+@import "./components/pages/products";
+@import "./components/spiinner";
 
 //Estilos generales
 body {
@@ -15,79 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-margin-block-start: 0;
+  color: $darkGray;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.btn-basic {
-  background-color: $verde-claro;
-  border-color: $verde-claro;
-  border-radius: 36px;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-  color: $blanco;
-  box-shadow: 0 5px 30px rgb(0 0 0 / 57%);
-  transition: 0.5s ease-in;
-  padding: 10px 50px;
-  cursor: pointer;
-  font-family: Poppins;
-  opacity: 0.9;
-
-  &:hover {
-    transition: 1000ms;
-    background-color: #35D475;
-    opacity: 1;
-  }
-}
-
-.btn-Presentations {
-  background-color: $verde-claro;
-  border-color: $verde-claro;
-  border-radius: 36px;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-  color: $blanco;
-  box-shadow: 0 5px 30px rgb(0 0 0 / 57%);
-  transition: 0.5s ease-in;
-  cursor: pointer;
-  font-family: Poppins;
-  opacity: 0.9;
-  padding: 10px 20px;
- 
-  &:hover {
-    transition: 1000ms;
-    background-color: #35D475;
-    opacity: 1;
-  }
-}
-
-.centrar {
-  display: flex;
-  align-items: center;
-}
-
-.spinner {
-  display: flex;
-  justify-content: center;
-  padding: 100px;
-}
-
-
-//Imports
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@300&display=swap");
-@import "./components/navBar";
-@import "./components/footer";
-@import "./components/whatsApp";
-@import "./components/pages/about";
-@import "./components/pages/contacts/contacts";
-@import "./components/pages/contacts/successfulmessage";
-@import "./components/pages/home";
-@import "./components/pages/products";
-

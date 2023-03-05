@@ -1,0 +1,31 @@
+.btn-basic {
+  @include font(14px, 24px, bold);
+  background-color: $button;
+  border-color: $button;
+  border-radius: 36px;
+  border: none;
+  color: $white;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 57%);
+  transition: 0.5s ease-in;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-family: Poppins;
+  opacity: 0.9;
+
+    &:hover {
+      transition: 1000ms;
+      background-color: #35D475;
+      opacity: 1;
+    }
+  }
+  
+  .btn-Presentations {
+    @extend .btn-basic;
+    padding: 10px 20px;
+   
+    &:hover {
+      transition: 1000ms;
+      background-color: $buttonHover;
+      opacity: 1;
+    }
+  }

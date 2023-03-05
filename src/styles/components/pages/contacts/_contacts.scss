@@ -1,16 +1,15 @@
 .contacts-container {
   .contactInfo-container {
+    @include flexible(flex, space-evenly, center);
+    color: $darkGray;
+    background-color: $brightGray;
     margin: 130px auto 0 auto;
     padding: 100px 0;
-    color: $gris-oscuro;
-    background-color: $gris-claro;
-    display: flex;
-    justify-content: space-evenly;
 
     .textForm-container {
+      @include flexible(flex, flex-start, center);
       padding-top: 25px;
       width: 100%;
-      display: flex;
 
       .textForm {
         max-width: 98%;
@@ -18,63 +17,57 @@
         margin-left: 17%;
 
         h2 {
-          font-size: 32px;
-          font-weight: bold;
-          line-height: 46px;
+          @include font( 32px, 46px, bold);
         }
 
         p {
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 32px;
+          @include font( 20px, 32px, 500);  
         }
+        
         .textForm-LookingFor {
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 38px;
+          @include font( 24px, 38px, 500);
         }
 
         .textFrom-SocialItems {
-          display: flex;
-          justify-content: left;
-
+          @include flexible(flex, flex-end, center);
+       
           .facebookIcon {
             svg {
               border-radius: 40%;
               font-size: 2em;
-              fill: $gris-oscuro;
+              fill: $darkGray;
               margin-right: 10px;
 
               &:hover {
-                fill: $azul;
+                fill: $facebook;
               }
             }
           }
 
           .instagramIcon {
             svg {
-              background-color: $gris-oscuro;
+              background-color: $darkGray;
               border-radius: 30%;
               font-size: 2em;
-              fill: $blanco;
+              fill: $white;
               margin-left: 10px;
 
               &:hover {
-                background-color: $rojo;
-                fill: $blanco;
+                background-color: $instagram;
+                fill: $white;
               }
             }
           }
         }
 
         .contact-data {
-          @extend .centrar;
+          @include flexible(flex, flex-start, center);
           margin: 10px 0;
           cursor: pointer;
 
           svg {
             font-size: 2em;
-            fill: $gris-oscuro;
+            fill: $darkGray;
 
             &:hover {
               fill: #000;
@@ -83,7 +76,7 @@
           a {
             text-decoration: none;
             font-size: 18px;
-            color: $gris-oscuro;
+            color: $darkGray;
             margin: 0px 20px;
             &:hover {
               color: #000;
@@ -91,7 +84,7 @@
             }
           }
         }
-        @media screen and (min-device-width: 320px) and (max-width: 880px) {
+        @media screen and (max-width: 880px) {
           padding: 0px 30px;
         }
       }
@@ -102,11 +95,11 @@
       display: block;
 
       form {
+        display: flex;
+        flex-direction: column;   
         margin: 0 auto;
         padding: 0 5%;
         max-width: 400px;
-        display: flex;
-        flex-direction: column;      
     
         button{
           margin-top: 10px;
@@ -119,31 +112,31 @@
 
           .label{
             position: absolute;
+            padding: 0 2px;
             left: 10px;
             top: 14px;
+            color: $darkGray;
             transition: all .2s;
-            padding: 0 2px;
             z-index: 1;
-            color: $gris-oscuro;
           }
 
           .text-input{
             font-family: inherit;
             width: 100%;
             padding: 0.8em ;
-            border: 2px solid $gris-claro ;
-            background: #fff;
+            border: 2px solid $brightGray;
+            color: $darkGray;
+            background: $white;
             border-radius: 10px;
             font-size:  18px;
             outline: none;
             transition: all .3s;
-            color: $gris-oscuro;
           }
 
           .label::before {
             content: "";
             height: 5px;
-            background: #fff;
+            background: $white;
             position: absolute;
             left: 0;
             top: 10px;
@@ -152,7 +145,7 @@
           }
           
           .text-input:focus {
-            border: 2px solid $verde-claro;
+            border: 2px solid $button;
           }
 
           .text-input:focus+.label, 
@@ -161,7 +154,7 @@
            top: -12px; 
            padding: 0 2px;;
 
-           color: $verde-claro;
+           color: $button;
            font-size: 18px;
           }        
 
@@ -182,20 +175,18 @@
           }
 
           .errorMessage {
-            bottom: -20px;
+            @include font( 12px, 18px, bold);
             position: absolute;
-            font-size: 12px;
-            font-weight: bold;
-            color: #dc3545;
+            color: $error;
+            bottom: -20px;
             margin: 0;
           }
 
           .errorMessage-textArea{
-            bottom: -16px;
+            @include font( 12px, 18px, bold);
             position: absolute;
-            font-size: 12px;
-            font-weight: bold;
-            color: #dc3545;
+            color: $error;
+            bottom: -16px;
             margin: 0;
           }
         }
@@ -204,15 +195,15 @@
   }
 
   .contactLocation-Container {
+    @include flexible(flex, center, center);
     padding: 100px 5%;
-    display: flex;
-    justify-content: center;
-    @media screen and (min-device-width: 320px) and (max-width: 880px) {
+
+    @media screen and (max-width: 880px) {
       padding-top: 40px;
     }
 
     .contactLocation-maps {
-      display: flex;
+      @include flexible(flex, center, center);
       gap: 5em;
 
       @media screen and (max-width: 880px) {
@@ -240,15 +231,11 @@
         }
 
         h2 {
-          font-size: 32px;
-          line-height: 42px;
-          font-weight: bold;
+          @include font( 32px, 42px, bold);
         }
 
         p {
-          font-size: 20px;
-          line-height: 32px;
-          font-weight: 500;
+          @include font( 20px, 32px, 500);
         }
       }
     }
@@ -342,31 +329,25 @@
     .textForm-container {
       .textForm {
         h2 {
-          font-size: 29px;
-          font-weight: bold;
-          line-height: 46px;
+          @include font( 29px, 46px, bold);
         }
 
         p {
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 32px;
+          @include font( 18px, 32px, 500);
         }
 
         .textForm-LookingFor {
-          font-size: 22px;
-          font-weight: 500;
-          line-height: 38px;
+          @include font( 22px, 38px, 500);
         }
 
         .contact-data {
           a {
             text-decoration: none;
             font-size: 16px;
-            color: $gris-oscuro;
+            color: $darkGray;
             margin: 0px 20px;
             &:hover {
-              color: #000;
+              color: $black;
               font-weight: bold;
             }
           }

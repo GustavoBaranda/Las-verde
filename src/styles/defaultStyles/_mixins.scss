@@ -1,0 +1,26 @@
+@mixin flexible($display, $justify, $align) {
+   display          : $display;
+   justify-content  : $justify;
+   align-items      : $align;  
+}
+
+@mixin font($size, $height, $weight) {
+    font-size       : $size;
+    line-height     : $height;
+    font-weight     : $weight;    
+}
+
+@mixin position($top, $right, $bottom, $left){
+    top             : $top;
+    right           : $right;
+    bottom          : $bottom;
+    left            : $left;
+}
+
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+  }
+

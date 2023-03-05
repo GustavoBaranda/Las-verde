@@ -1,9 +1,4 @@
-@import "./home/firstBannerHome";
-@import "./home/secondBannerHome";
-@import "./home/slider";
-@import "./home/thirdBannerHome";
-
 .homeContainer {
-  display: block;
+  @include flexible(block, center, center);
   width: 100%;
 }

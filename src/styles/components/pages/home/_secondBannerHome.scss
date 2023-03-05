@@ -1,36 +1,30 @@
 .SecondBannerHomeContainer {
+  @include flexible(block, center, center);
+  @include position(5px, none, 100px, none);
+  position: relative;
   margin: 0 auto;
-  top: 5px;
-  bottom: 100px;
-  display: block;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 620px;
-  position: relative;
 
   .secondBannerHome-title {
-    max-width: 350px;
-    color: $blanco;
-    font-weight: bold;
+    @include font(28px, 40px, bold);
+    @include position(18%, none, none, 8%);
     position: absolute;
-    top: 25%;
-    left: 8%;
+    max-width: 650px;
+    color: $white;
   }
 
   .secondBannerHome-SubTittle {
-    max-width: 450px;
-    color: $blanco;
-    font-weight: bold;
+    @include font(20px, 22px, bold);
+    @include position(40%, none, none, 8%);
     position: absolute;
-    top: 45%;
-    left: 8%;
+    max-width: 580px;
+    color: $white;
   }
 
   .btn-container {
+    @include position(none, none, 25%, 8%);
     position: absolute;
-    bottom: 25%;
-    left: 8%;
   }
 
   img {
@@ -39,26 +33,22 @@
     object-fit: cover;
   }
 
-  @media screen and (max-device-width: 850px) {
+  @media screen and (max-device-width: 600px) {
     text-align: center;
     .secondBannerHome-title {
-      top: 25%;
-      right: 0;
-      left: 0;
+      @include font(24px, 46px, bold);
+      @include position(25%, 0, none, 0);
       margin: auto;
     }
 
     .secondBannerHome-SubTittle {
-      top: 45%;
-      right: 0;
-      left: 0;
+      @include font(18px, 22px, 500);
+      @include position(50%, 0, none, 0);
       margin: auto;
     }
 
     .btn-container {
-      top: 75%;
-      right: 0;
-      left: 0;
+      @include position(75%, 0, none, 0);
       margin: auto;
     }
   }
