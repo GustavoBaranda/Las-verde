@@ -1,7 +1,7 @@
 .container-slider {
   position: relative;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 98%;
   height: 500px;
   margin: 130px auto 100px auto;
   overflow: hidden;
@@ -31,6 +31,7 @@
         @include font(32px, 46px, bold);
         margin: 0
       }
+      
     }
     
     .subTittleSliderContainer {
@@ -40,7 +41,8 @@
       color: $white;
          
       h3{
-        @include font(28px, 32px, 500);
+        @include font(28px, 32px, 700);
+        padding: 0 2%;
       }
     }
 
@@ -141,7 +143,7 @@
         margin: auto;
 
         h3{
-          @include font(18px, 22px, 500);
+          @include font(18px, 22px, 700);
         }
       }
     }

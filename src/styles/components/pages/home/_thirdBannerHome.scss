@@ -15,7 +15,7 @@
   }
 
   .thirdBannerHome-SubTittle {
-    @include font(20px, 22px, bold);
+    @include font(20px, 22px, 700);
     @include position(45%, 8%, none, none);
     position: absolute;
     max-width: 600px;
@@ -73,9 +73,10 @@
     }
 
     .thirdBannerHome-SubTittle {
-      @include font(18px, 22px, 500);
+      @include font(18px, 22px, 700);
       @include position(50%, 0, none, 0);
       margin: auto;
+      padding: 0 2%;
     }
 
     .thirdBannerHome-socialItem {

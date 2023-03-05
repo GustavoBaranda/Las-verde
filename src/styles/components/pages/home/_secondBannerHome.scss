@@ -15,8 +15,9 @@
   }
 
   .secondBannerHome-SubTittle {
-    @include font(20px, 22px, bold);
+    @include font(20px, 22px, 700);
     @include position(40%, none, none, 8%);
+    padding: 0 2%;
     position: absolute;
     max-width: 580px;
     color: $white;
@@ -42,7 +43,7 @@
     }
 
     .secondBannerHome-SubTittle {
-      @include font(18px, 22px, 500);
+      @include font(18px, 22px, 700);
       @include position(50%, 0, none, 0);
       margin: auto;
     }
