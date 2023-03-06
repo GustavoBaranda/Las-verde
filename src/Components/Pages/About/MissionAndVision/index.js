@@ -24,7 +24,7 @@ const MissionAndVision = () => {
           Las Verde pretende ser la primer opción de consumo de una bebida 100%a base de fruta y verdura.<br /><br />
         </p>    
       </div>
-      <figure className="VisionImageContent">
+      <figure className="visionImageContent">
         <img src={ naranjada } alt="Naranjada" />
       </figure>
     </div>

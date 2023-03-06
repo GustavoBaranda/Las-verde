@@ -5,7 +5,7 @@ import ProductiveProcess from "./ProductiveProcess";
 
 const About = () => {
   return (
-    <div className="nosotros-container">
+    <div className="aboutContainer">
       <History />
       <MissionAndVision />
       <ProductiveProcess />

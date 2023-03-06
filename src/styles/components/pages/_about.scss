@@ -1,98 +1,226 @@
-.historyContainer {
-  @include flexible(flex, space-between, center);
+.aboutContainer{
   padding-top: 150px;
-  padding-bottom: 100px;
-  margin: 0 5%;
 
+  
+  .historyContainer {
+    @include flexible(flex, space-around, center);
+    gap: 20px;
+    padding-bottom: 75px;
+    margin: 0 2%;
+  }
+  
   .historyContent {
     height: 100%;
-
-    .histotyTitle {
+    
+    .historyTitle {
       @include font(32px, 46px, bold);
     }
-
+    
     .historyText {
       @include font(26px, 32px, 500);
     }
+    
+    @media screen and (max-width: 1450px) {
+      .historyTitle {
+        @include font(26px, 46px, bold);
+      }
+      
+      .historyText {
+        @include font(20px, 32px, 500);
+      } 
+    }
+    
+    @media screen and (max-width: 1200px) {
+      .historyTitle {
+        @include font(20px, 46px, bold);
+      }
+      
+      .historyText {
+        @include font(16px, 32px, 500);
+      } 
+    }
   }
-
+  
   .historyImageContent {
-    margin: o auto;
-    max-width: 550px; 
-
+    margin: 0 auto;
+    width: 100%;
+    max-width: 468px;
+    text-align: center;
+    
     img{
-      border-radius: 10px;
+      width: 100%;
+        max-width: 448px;
+        border-radius: 10px;
+      }
+      
+      figcaption{
+        text-align: left;
+        @include font(14px, 20px, 500);
+      }
     }
 
-    figcaption{
-      @include font(18px, 20px, 500);
+    @media screen and (max-width: 1000px) {
+      .historyContainer {
+        display: grid;
+        place-content: center;
+        
+        .historyContent {
+          text-align: center;
+        }
+        
+        .historyImageContent{
+          margin: 0 auto;
+        }
+      }
+    }  
+    
+    .missionAndVisionContainer{
+      background: $brightGray;
+      
+      .missionAndVisionContent {
+        @include flexible(flex, space-between, center);
+        gap: 20px;
+        padding-bottom: 75px;
+        margin: 0 2%;
+      
+      .missionContent {
+        height: 100%;
+        
+        .missionTitle {
+          @include font(32px, 46px, bold);
+        }
+        
+        .missionSubTitle {
+          @include font(26px, 38px, 700);
+        }
+        
+        .missionText {
+          @include font(26px, 32px, 500);
+        }
+        
+        @media screen and (max-width: 1450px) {
+          .missionTitle {
+            @include font(26px, 46px, bold);
+          }
+          
+          .missionSubTitle {
+            @include font(20px, 38px, 700);
+          }
+          
+          .missionText {
+            @include font(20px, 32px, 500);
+          }  
+        }
+        
+        @media screen and (max-width: 1200px) {
+          .missionTitle {
+            @include font(22px, 46px, bold);
+          }
+          
+          .missionSubTitle {
+            @include font(16px, 38px, 700);
+          }
+          
+          .missionText {
+            @include font(16px, 32px, 500);
+          }  
+        }
+      }
+      
+      .visionImageContent {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 468px;
+        text-align: center;
+        
+        img{
+          width: 100%;
+          max-width: 448px;
+          border-radius: 10px;
+        }
+      }
     }
+    
+    @media screen and (max-width: 1000px) {
+      .missionAndVisionContent {
+        display: grid;
+        place-content: center;
+        
+        .missionContent {
+          text-align: center;
+        }
+        
+        .visionImageContent{
+          margin: 0 auto;
+        }
+      }
+    }  
   }
-}
-
-.missionAndVisionContainer{
-  background: $brightGray;
-
-  .missionAndVisionContent {
+  
+  .productiveProcessContainer {
     @include flexible(flex, space-between, center);
-    padding: 100px 0;
-    margin: 0 5%;
-   
-    .missionContent {
+    gap: 20px;
+    padding-bottom: 75px;
+    margin: 0 2%;
+    
+    .productiveProcessContent {
       height: 100%;
       
-      .missionTitle {
+      .productiveProcessTitle {
         @include font(32px, 46px, bold);
       }
       
-      .missionSubTitle {
-        @include font(24px, 38px, 700);
-      }
-
-      .missionText {
+      .productiveProcessText {
         @include font(26px, 32px, 500);
       }
+      
+      @media screen and (max-width: 1450px) {
+        .productiveProcessTitle {
+          @include font(26px, 46px, bold);
+        }
+  
+        .productiveProcessText {
+          @include font(20px, 32px, 500);
+        }
+        
+        @media screen and (max-width: 1200px) {
+          .productiveProcessTitle {
+            @include font(22px, 46px, bold);
+          }
+          
+          .productiveProcessText {
+            @include font(16px, 32px, 500);
+          } 
+        }
+      }  
     }
-
-    .VisionImageContent {
-      margin: o auto;
-      max-width: 550px; 
-
+    
+    .productiveProcessImageContent {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 468px;
+      text-align: center;
+      
       img{
+        width: 100%;
+        max-width: 448px;
         border-radius: 10px;
       }
     }
   }
-}
+  
+  @media screen and (max-width: 1000px) {
+    .productiveProcessContainer {
+      display: grid;
+      place-content: center;
+      
+      .productiveProcessContent {
+        text-align: center;
+      }
 
-.productiveProcessContainer {
-  @include flexible(flex, space-between, center);
-  padding-top: 150px;
-  padding-bottom: 100px;
-  margin: 0 5%;
-
-  .productiveProcessContent {
-    height: 100%;
-
-    .productiveProcessTitle {
-      @include font(32px, 46px, bold);
+      .productiveProcessImageContent{
+        margin: 0 auto;
+      }
     }
-
-    .productiveProcessText {
-      @include font(26px, 32px, 500);
-    }
-  }
-
-  .productiveProcessImageContent {
-    margin: o auto;
-    max-width: 550px; 
-
-    img{
-      border-radius: 10px;
-    }
-
-    figcaption{
-      @include font(18px, 20px, 500);
-    }
-  }
+  }  
 }
