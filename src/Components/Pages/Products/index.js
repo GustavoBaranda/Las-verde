@@ -9,19 +9,11 @@ const Products = () => {
   const [productsList, setProductsList] = useState([]);
   const [popUpContent, setPopUpContent] = useState([]);
   const [popUpTogle, setPopUpTogle] = useState(false);
-  const [styling, setStyling] = useState(null);
   const [load, setLoad] = useState(false);
 
   const changeContent = (product) => {
     setPopUpContent([product]);
     setPopUpTogle(!popUpTogle);
-    if (styling === null) {
-      setStyling({
-        position: "fixed",
-      });
-    } else {
-      setStyling(null);
-    }
    };
 
   useEffect(() => {
@@ -45,7 +37,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="products-Container" style={styling}>
+    <div className="products-Container">
       <ProductHeader />
       {load ? (
         <div className="cards-products">
