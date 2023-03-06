@@ -11,7 +11,8 @@ const initialData = {
 const onValidate = (data) => {
   let errors = {}
   const regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-  const regexPhone = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/g;
+  const regexPhone = /^\d{10,13}$/
+  // /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/g;
   const regexEmail = /^\w+([\.\+\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w{2,4})+$/g; //eslint-disable-line
   const regexMessage = /^.{1,255}$/;
 

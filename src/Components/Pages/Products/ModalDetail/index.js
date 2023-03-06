@@ -43,8 +43,10 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                       <div className="popUp-SocialItem">
                         <a
                             className="facebookIcon"
-                            href="https://es-la.facebook.com/lasverde.tiendasaludable/"
+                            // href="https://es-la.facebook.com/lasverde.tiendasaludable/"
                             target="blank"
+
+                            href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=240209a45d6de04743bfaed9faac8d3ef&service=5&title=C%26oacute%3Bmo+Crear+Botones+De+Redes+Sociales+Para+Cada+Red+Principal&link=https%3A%2F%2Fblog.hootsuite.com%2Fes%2Fbotones-de-redes-sociales%2F&template=Cómo Crear Botones De Redes Sociales Para Cada Red Principal - ${short_link} - @HootsuiteES&source=Shareaholic"
                         >
                             <FaFacebook />
                         </a>
