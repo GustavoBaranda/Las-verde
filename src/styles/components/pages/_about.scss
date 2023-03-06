@@ -1,118 +1,98 @@
-.nosotros-first {
-  margin-top: 8em;
-  margin-bottom: 50px;
+.historyContainer {
+  @include flexible(flex, space-between, center);
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin: 0 5%;
 
-  .first-container {
-    @media screen and (min-device-width: 881px) {
-      display: flex;
-    }
-    p,
-    h2 {
-      width: 80%;
-      margin: auto;
-    }
+  .historyContent {
+    height: 100%;
 
-    h2 {
-      font-weight: bolder;
-      padding-top: 4%;
+    .histotyTitle {
+      @include font(32px, 46px, bold);
     }
 
-    p {
-      padding-top: 4%;
-      line-height: 30px;
+    .historyText {
+      @include font(26px, 32px, 500);
     }
   }
 
-  @media screen and (min-device-width: 320px) and (max-width: 880px) {
-    text-align: center;
+  .historyImageContent {
+    margin: o auto;
+    max-width: 550px; 
 
-    img {
-      width: 100%;
-      margin-top: 50px;
+    img{
+      border-radius: 10px;
+    }
+
+    figcaption{
+      @include font(18px, 20px, 500);
     }
   }
 }
 
-.nosotros-second {
-  background-color: $brightGray;
-  padding-bottom: 50px;
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  margin-top: 30px;
+.missionAndVisionContainer{
+  background: $brightGray;
 
-  p,
-  h2,
-  h3 {
-    width: 80%;
-    margin: auto;
-  }
+  .missionAndVisionContent {
+    @include flexible(flex, space-between, center);
+    padding: 100px 0;
+    margin: 0 5%;
+   
+    .missionContent {
+      height: 100%;
+      
+      .missionTitle {
+        @include font(32px, 46px, bold);
+      }
+      
+      .missionSubTitle {
+        @include font(24px, 38px, 700);
+      }
 
-  h2,
-  h3 {
-    font-weight: bolder;
-    padding-top: 3%;
-  }
+      .missionText {
+        @include font(26px, 32px, 500);
+      }
+    }
 
-  p {
-    padding-top: 2%;
-    line-height: 30px;
-  }
+    .VisionImageContent {
+      margin: o auto;
+      max-width: 550px; 
 
-  img {
-    width: 20em;
-    margin: auto;
-  }
-
-  @media screen and (min-device-width: 320px) and (max-width: 880px) {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    img {
-      width: 70%;
-      margin-top: 50px;
+      img{
+        border-radius: 10px;
+      }
     }
   }
 }
 
-.nosotros-third {
-  margin-top: 40px;
-  padding-bottom: 80px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+.productiveProcessContainer {
+  @include flexible(flex, space-between, center);
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin: 0 5%;
 
-  .third-text {
-    p,
-    h2 {
-      width: 80%;
-      margin: auto;
+  .productiveProcessContent {
+    height: 100%;
+
+    .productiveProcessTitle {
+      @include font(32px, 46px, bold);
     }
 
-    h2 {
-      font-weight: bolder;
-      padding-top: 8%;
-    }
-
-    p {
-      padding-top: 4%;
-      line-height: 30px;
+    .productiveProcessText {
+      @include font(26px, 32px, 500);
     }
   }
 
-  img {
-    width: 25em;
-    margin: auto;
-  }
+  .productiveProcessImageContent {
+    margin: o auto;
+    max-width: 550px; 
 
-  @media screen and (min-device-width: 320px) and (max-width: 880px) {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    img{
+      border-radius: 10px;
+    }
 
-    img {
-      width: 70%;
-      margin-top: 5 0px;
+    figcaption{
+      @include font(18px, 20px, 500);
     }
   }
 }
