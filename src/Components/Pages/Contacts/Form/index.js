@@ -37,7 +37,7 @@ const onValidate = (data) => {
   if (!data.Message.trim()) {
     errors.Message = 'El campo "Mensaje" es requerido!'
   }  else if(!regexMessage.test(data.Message)){
-    errors.Message = 'El campo "Message" no debe exceder los 255 caracteres'
+    errors.Message = 'El campo "Mensaje" no debe exceder los 255 caracteres'
   }
   return errors 
 }
