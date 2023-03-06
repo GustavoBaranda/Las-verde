@@ -51,11 +51,20 @@ const Slider = ()=> {
                         <div className="subTittleSliderContainer">
                             <h3>{ item.text }</h3>
                         </div>
-                        <div className="btn-container">    
-                            <Link to="/products">
-                                <button className="btn-basic">CONOCE MÁS {'>'} </button>
-                            </Link>
-                        </div>
+                        {
+                        slideIndex === 4?(
+                            <div className="btn-container">    
+                                <Link to="/contacts">
+                                    <button className="btn-basic">CONTACTANOS {'>'} </button>
+                                </Link>
+                            </div>
+                            ):(
+                            <div className="btn-container">    
+                                <Link to="/products">
+                                    <button className="btn-basic">CONOCE MÁS {'>'} </button>
+                                </Link>
+                            </div>) 
+                        }
                         <img src={ item.img } alt={ item.textimg } />
                     </div>
                 )

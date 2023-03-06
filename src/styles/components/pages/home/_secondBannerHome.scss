@@ -8,7 +8,7 @@
 
   .secondBannerHome-title {
     @include font(28px, 40px, bold);
-    @include position(18%, none, none, 8%);
+    @include position(15%, none, none, 8%);
     position: absolute;
     max-width: 650px;
     color: $white;
@@ -16,14 +16,14 @@
 
   .secondBannerHome-SubTittle {
     @include font(20px, 22px, 500);
-    @include position(40%, none, none, 8%);
+    @include position(45%, none, none, 8%);
     position: absolute;
     max-width: 580px;
-    color: $white;
+    color: $white;       
   }
 
   .btn-container {
-    @include position(none, none, 25%, 8%);
+    @include position(none, none, 20%, 8%);
     position: absolute;
   }
 
@@ -31,20 +31,29 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
   }
 
   @media screen and (max-device-width: 600px) {
     text-align: center;
     .secondBannerHome-title {
-      @include font(24px, 46px, bold);
+      @include font(22px, 46px, bold);
       @include position(25%, 0, none, 0);
       margin: auto;
+
+      h2{
+        margin: 0 2%;
+      }
     }
 
     .secondBannerHome-SubTittle {
-      @include font(18px, 22px, 500);
+      @include font(18px, 22px, 00);
       @include position(50%, 0, none, 0);
       margin: auto;
+
+      h4{
+        margin: 0 2%;
+      }
     }
 
     .btn-container {

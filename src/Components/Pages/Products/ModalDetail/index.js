@@ -34,10 +34,17 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                       <h3>Descripción</h3>
                       <p>{pop.description}</p>
                       <h3>Presentaciones</h3>
-                      <div className="presentations">                        
-                        <p className="btn-Presentations">500ml</p>
-                        <p className="btn-Presentations">250ml</p>
-                      </div>
+                      {
+                        pop.id != 7?(
+                          <div className="presentations">                        
+                            <p className="btn-Presentations">500ml</p>
+                            <p className="btn-Presentations">250ml</p>
+                          </div>
+                          ):(
+                          <div className="presentations">                        
+                            <p className="btn-Presentations">500ml</p>
+                          </div>)
+                      }
                       <img src={ barra } alt="barra" />
                       <h3>Compartir</h3>
                       <div className="popUp-SocialItem">
