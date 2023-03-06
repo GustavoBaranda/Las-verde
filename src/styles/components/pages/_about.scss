@@ -4,9 +4,10 @@
   
   .historyContainer {
     @include flexible(flex, space-around, center);
-    gap: 20px;
+    gap: 8%;
     padding-bottom: 75px;
-    margin: 0 5%;
+    margin: 0 3%;
+    text-align: justify;
   }
   
   .historyContent {
@@ -82,9 +83,10 @@
       
       .missionAndVisionContent {
         @include flexible(flex, space-between, center);
-        gap: 20px;
+        gap: 8%;
         padding-bottom: 75px;
-        margin: 0 5%;
+        margin: 0 3%;
+        text-align: justify;
       
       .missionContent {
         height: 100%;
@@ -165,9 +167,10 @@
   
   .productiveProcessContainer {
     @include flexible(flex, space-between, center);
-    gap: 20px;
+    gap: 8%;
     padding-bottom: 75px;
-    margin: 0 5%;
+    margin: 0 3%;
+    text-align: justify;
     
     .productiveProcessContent {
       height: 100%;

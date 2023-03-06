@@ -29,7 +29,7 @@
         }
 
         .textFrom-SocialItems {
-          @include flexible(flex, flex-end, center);
+          @include flexible(flex, flex-start, center);
        
           .facebookIcon {
             svg {

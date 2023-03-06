@@ -14,7 +14,7 @@ const SecondBannerHome = () => {
                 <h4>Todos los días trabajamos arduamente para entregarte los productos más frescos y con la mejor calidad del mercado. ¿Pero? ¿Cómo lo hacemos?</h4>
             </div>
             <div className="btn-container">    
-                <Link to="/detail">
+                <Link to="/about">
                     <button className="btn-basic">CONOCE MÁS</button> 
                 </Link>
             </div>
