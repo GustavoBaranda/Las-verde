@@ -18,7 +18,9 @@ const onValidate = (data) => {
 
   if (!data.Name.trim()) {
     errors.Name = 'El campo "Nombre" es requerido!'
-  } else if(!regexName.test(data.Name)){
+  } else if (data.Name.length < 4 ){
+    errors.Name = 'El campo "Nombre" debe tener 4 caracteres como minimo'
+  }else if(!regexName.test(data.Name)){
     errors.Name = 'El campo "Nombre" solo acepta letras y espacios en blanco'
   }
   
