@@ -35,7 +35,7 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                       <p>{pop.description}</p>
                       <h3>Presentaciones</h3>
                       {
-                        pop.id != 7?(
+                        pop.id !== '7'?(
                           <div className="presentations">                        
                             <p className="btn-Presentations">500ml</p>
                             <p className="btn-Presentations">250ml</p>
@@ -43,17 +43,16 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                           ):(
                           <div className="presentations">                        
                             <p className="btn-Presentations">500ml</p>
-                          </div>)
+                          </div>
+                          )
                       }
                       <img src={ barra } alt="barra" />
                       <h3>Compartir</h3>
                       <div className="popUp-SocialItem">
                         <a
-                            className="facebookIcon"
-                            // href="https://es-la.facebook.com/lasverde.tiendasaludable/"
-                            target="blank"
-
-                            href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=240209a45d6de04743bfaed9faac8d3ef&service=5&title=C%26oacute%3Bmo+Crear+Botones+De+Redes+Sociales+Para+Cada+Red+Principal&link=https%3A%2F%2Fblog.hootsuite.com%2Fes%2Fbotones-de-redes-sociales%2F&template=Cómo Crear Botones De Redes Sociales Para Cada Red Principal - ${short_link} - @HootsuiteES&source=Shareaholic"
+                          className="facebookIcon"
+                          target="blank"
+                          href="https://es-la.facebook.com/lasverde.tiendasaludable/"
                         >
                             <FaFacebook />
                         </a>

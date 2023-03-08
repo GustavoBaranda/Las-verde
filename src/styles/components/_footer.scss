@@ -1,6 +1,6 @@
 .footerContainer { 
   @include flexible(flex, space-evenly, center);
-  @include font(16px, 18px, 500);
+  @include font(14px, 18px, 500);
   text-align: center; 
   background-color: $violet; 
   color: $white; 
