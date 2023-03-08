@@ -50,14 +50,8 @@
     
     img{
       width: 448px;
-      border-radius: 10px;
     }
-      
-    figcaption{
-      text-align: left;
-      @include font(14px, 20px, 500);
-    }
-    }
+  }
 
     @media screen and (max-width: 1000px) {
       .historyContainer {
@@ -143,7 +137,6 @@
         
         img{
           width: 448px;
-          border-radius: 10px;
         }
       }
     }
@@ -218,7 +211,6 @@
       
       img{
         width: 448px;
-        border-radius: 10px;
       }
     }
   }

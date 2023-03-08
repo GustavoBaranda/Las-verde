@@ -3,8 +3,8 @@
   width: 100%;
 
   .productsHeader-Container {
-    @include flexible(flex, space-around, center);
-    padding: 130px 20px;
+    @include flexible(flex, space-between, center);
+    padding: 130px 10%;
     gap: 20px;
 
     @media screen and (max-width: 880px) {
@@ -41,15 +41,16 @@
 
   .cards-products {
     display: grid;
+    place-content: center;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    grid-gap: 30px;
-    margin: 0 auto;
     padding-bottom: 50px;
     
     .itemContainer {
-      width: 100%;
-      
+      place-content: center;
+      max-width: 100%;
+      padding: 0 20px;
+          
       .card {
         @include flexible(flex, center, center);
         flex-direction: column;

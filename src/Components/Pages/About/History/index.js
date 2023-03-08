@@ -24,7 +24,6 @@ const History = () => {
       </div>
       <figure className="historyImageContent">
         <img src={ juiceRail } alt="Foto del proceso de elaboración de los jugos" />
-        <figcaption>Producto de Las Verde.</figcaption>
       </figure>
     </div>
   )
