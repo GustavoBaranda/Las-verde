@@ -19,8 +19,11 @@
 
 
   .spinner {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    display: grid;
+    place-content: center;
     padding: 100px;
+    height: 70vh;
   }
 

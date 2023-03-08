@@ -38,21 +38,23 @@ const Products = () => {
 
   return (
     <div className="products-Container">
-      <ProductHeader />
       {load ? (
-        <div className="cards-products">
-          {productsList.map((product) => {
-            return (
-              <Item
-                product={product}
-                key={product.id}
-                popUpContent={popUpContent}
-                changeContent={changeContent}
-                popUpTogle={popUpTogle}
-              />
-            );
-          })}
-        </div>
+        <div>
+          <ProductHeader />
+          <div className="cards-products">
+            {productsList.map((product) => {
+              return (
+                <Item
+                  product={product}
+                  key={product.id}
+                  popUpContent={popUpContent}
+                  changeContent={changeContent}
+                  popUpTogle={popUpTogle}
+                />
+              );
+            })}
+          </div>
+        </div>  
       ) : (
         <div className="spinner">
           <Spinner />
