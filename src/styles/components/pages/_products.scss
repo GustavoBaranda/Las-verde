@@ -50,7 +50,7 @@
       place-content: center;
       max-width: 100%;
       padding: 0 20px;
-          
+
       .card {
         @include flexible(flex, center, center);
         flex-direction: column;
@@ -85,8 +85,8 @@
         padding: 0 20px;
                  
         .popUp-Body {
-          margin-left: -2.5%;
-          max-width: 800px;
+          margin-left: -3%;
+          max-width: 600px;
           max-height: 100%; 
           
           .popUp-content {
@@ -123,29 +123,40 @@
               div .productImg {
                 padding-top: auto;
                 text-align: center;
-                width: 350px;
+                width: 300px;
               }
 
               div {
                 h2 {
-                  @include font(32px, 46px, bold);
-                  margin: 16px 0;
+                  @include font(28px, 46px, bold);
+                  margin: 10px 0;
                 }
 
                 h3 {
                   @include font(28px, 32px, 500);
-                  margin: 18px 0;
+                  margin: 10px 0;
+                }
+
+                h4{
+                  @include font(16px, 16px, 700);
+                  margin: 10px 0 0;
                 }
 
                 p {
                   @include font(16px, 22px, 500);
                   margin: 10px 0;
+                  text-align: justify;
                 }
               }
 
               .presentations{
                 @include flexible(flex, flex-start, center);
+                margin: 0;
                 gap: 5px;
+
+                p{
+                  margin: 10px 0 20px 0;
+                }
               }
 
               .popUp-SocialItem {
@@ -205,135 +216,135 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .products-Container .cards-products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+// @media screen and (max-width: 1200px) {
+//   .products-Container .cards-products {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
 
-    .itemContainer {
-      .popUp-container {
-        padding-top: 150px;
-        .popUp-Body .popUp-content {
-          .close {
-            @include position(8px, -18px, none, none);
-          }
+//     .itemContainer {
+//       .popUp-container {
+//         padding-top: 150px;
+//         .popUp-Body .popUp-content {
+//           .close {
+//             @include position(8px, -18px, none, none);
+//           }
 
-          .popUp {
-            margin-left: 0;
-          }
-        }
-      }
-    }
-  }
-}
+//           .popUp {
+//             margin-left: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 1000px) {
-  .products-Container .cards-products .itemContainer .popUp-container {
-    .popUp-Body {
-      .popUp-content {
-        padding: 0 20px;
+// @media screen and (max-width: 1000px) {
+//   .products-Container .cards-products .itemContainer .popUp-container {
+//     .popUp-Body {
+//       .popUp-content {
+//         padding: 0 20px;
 
-        background-color: none;
-        .close {
-          @include position(8px, -15px, none, none);
-        }
+//         background-color: none;
+//         .close {
+//           @include position(8px, -15px, none, none);
+//         }
 
-        .popUp {
-          margin-left: -1%;
+//         .popUp {
+//           margin-left: -1%;
 
-          div {
-            h2 {
-              @include font(26px, 36px, bold);
-              margin: 16px 0;
-            }
+//           div {
+//             h2 {
+//               @include font(26px, 36px, bold);
+//               margin: 16px 0;
+//             }
 
-            h3 {
-              @include font(22px, 26px, 700);
-              margin: 18px 0;
-            }
+//             h3 {
+//               @include font(22px, 26px, 700);
+//               margin: 18px 0;
+//             }
 
-            p {
-              @include font(14px, 18px, 500);
-              margin: 10px 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//             p {
+//               @include font(14px, 18px, 500);
+//               margin: 10px 0;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 800px) {
-  .products-Container {
-    .productsHeader-Container {
-      display: block;
-      text-align: center;
+// @media screen and (max-width: 800px) {
+//   .products-Container {
+//     .productsHeader-Container {
+//       display: block;
+//       text-align: center;
 
-      .headline-Products {
-        margin: 0 auto;
-        width: 100%;
-      }
+//       .headline-Products {
+//         margin: 0 auto;
+//         width: 100%;
+//       }
 
-      .headline-Image {
-        img {
-          width: 100%;
-        }
-      }
-    }
+//       .headline-Image {
+//         img {
+//           width: 100%;
+//         }
+//       }
+//     }
 
-    .cards-products {
-      @include flexible(flex, space-around, center);
-      flex-direction: column;
-      width: 100%;
+//     .cards-products {
+//       @include flexible(flex, space-around, center);
+//       flex-direction: column;
+//       width: 100%;
 
-      .itemContainer {
-        .card {
-          padding: 10px;
-        }
-        .popUp-container {
-          padding-top: 220px;
+//       .itemContainer {
+//         .card {
+//           padding: 10px;
+//         }
+//         .popUp-container {
+//           padding-top: 220px;
 
-          .popUp-Body {
-            .popUp-content {
-              .close {
-                @include position(8px, 6px, none, none);
-              }
+//           .popUp-Body {
+//             .popUp-content {
+//               .close {
+//                 @include position(8px, 6px, none, none);
+//               }
 
-              .popUp {
-                padding-left: 5px;
-                padding-right: 5px;
-                margin-left: 1%;
+//               .popUp {
+//                 padding-left: 5px;
+//                 padding-right: 5px;
+//                 margin-left: 1%;
 
-                div .productImg {
-                  max-width: 250px;
-                }
+//                 div .productImg {
+//                   max-width: 250px;
+//                 }
 
-                div {
-                  h2 {
-                    @include font(24px, 36px, bold);
-                    margin: 16px 0;
-                  }
+//                 div {
+//                   h2 {
+//                     @include font(24px, 36px, bold);
+//                     margin: 16px 0;
+//                   }
 
-                  h3 {
-                    @include font(20px, 26px, 700);
-                    margin: 18px 0;
-                  }
+//                   h3 {
+//                     @include font(20px, 26px, 700);
+//                     margin: 18px 0;
+//                   }
 
-                  p {
-                    @include font(12px, 18px, 500);
-                    margin: 10px 0;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//                   p {
+//                     @include font(12px, 18px, 500);
+//                     margin: 10px 0;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
   .products-Container {
     .productsHeader-Container {
       display: block;
@@ -357,15 +368,16 @@
       width: 100%;
 
       .itemContainer .popUp-container {
-        padding-top: 150px;
+        padding-top: 100px;
 
         .popUp-Body {
+          padding: 0 20px;
           .popUp-content {
             .close {
-              @include position(2px, 12px, none, none);
+              @include position(4px, -10px, none, none);
 
               svg {
-                font-size: 0.8em;
+                font-size: 30px;
               }
             }
 
@@ -379,7 +391,7 @@
               border-radius: 20px;
               padding-left: 5px;
               padding-right: 5px;
-              margin-left: -0.5%;
+              margin-left: 0.5%;
 
               div .productImg {
                 max-width: 150px;
@@ -395,12 +407,17 @@
                 }
 
                 p {
+                  padding: 0 30px;
                   margin: 4px 0;
                 }
               }
 
               .presentations{
-                justify-content: center;
+                justify-content:center ;
+
+                p{
+                  padding: 0;
+                }
               }
 
               .popUp-SocialItem {
@@ -410,7 +427,7 @@
                 .instagramIcon,
                 .whastsappIcon {
                   svg {
-                    font-size: 20px;
+                    font-size: 32px;
                   }
                 }
               }

@@ -1,5 +1,4 @@
 import React from 'react'; 
-import { Link } from 'react-router-dom'; 
 import { 
   FaFacebook,  
   FaInstagram, 
@@ -8,9 +7,6 @@ import {
 } from "react-icons/fa"; 
  
 const ModalDetail = ({popUpContent, changeContent}) => {
-
-  let barra = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Imagenes%2Fbarra.png?alt=media&token=6d6638b1-03b0-411e-89c2-47e0749077e4"
-
 
   return (
     <div className="popUp-container" onClick={changeContent}>
@@ -31,23 +27,21 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                     </div>
                     <div>
                       <h2>{pop.title}</h2> 
-                      <h3>Descripción</h3>
                       <p>{pop.description}</p>
-                      <h3>Presentaciones</h3>
+                      <h4>Presentaciones</h4>
                       {
                         pop.id !== '7'?(
                           <div className="presentations">                        
-                            <p className="btn-Presentations">500ml</p>
-                            <p className="btn-Presentations">250ml</p>
+                            <p className="">500ml</p>
+                            <p> - </p>
+                            <p className="">250ml</p>
                           </div>
                           ):(
                           <div className="presentations">                        
-                            <p className="btn-Presentations">500ml</p>
+                            <p className="">500ml</p>
                           </div>
                           )
                       }
-                      <img src={ barra } alt="barra" />
-                      <h3>Compartir</h3>
                       <div className="popUp-SocialItem">
                         <a
                           className="facebookIcon"
@@ -70,9 +64,6 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                             <FaWhatsapp />
                         </a>
                       </div>
-                      <Link to="/contacts">
-                        <button className="btn-basic">CONTACTANOS</button>
-                      </Link>  
                     </div>
                   </div>
                 )
