@@ -63,6 +63,8 @@
       .historyContainer {
         display: grid;
         place-content: center;
+        padding-bottom: 20px;
+        gap: 0;
         
         .historyContent {
           text-align: center;
@@ -150,6 +152,8 @@
       .missionAndVisionContent {
         display: grid;
         place-content: center;
+        gap: 0;
+        padding-bottom: 20px;
         
         .missionContent {
           text-align: center;
@@ -223,6 +227,8 @@
     .productiveProcessContainer {
       display: grid;
       place-content: center;
+      gap: 0;
+      padding-bottom: 20px;
       
       .productiveProcessContent {
         text-align: center;
