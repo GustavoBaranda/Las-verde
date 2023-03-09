@@ -21,7 +21,7 @@
 
     .NavLink {
       @include flexible(flex, center, center);
-      @include font(20px, 20px, 500);
+      @include font(20px, 20px, 700);
       text-decoration: none;
       padding: 5px 0 2px;
       margin: 0 30px;
@@ -46,12 +46,9 @@
 
     .active {
       li {
-        @include font(20px, 20px, bold);
-        max-height: 100%;
-        max-width: 100%;
-        color: $darkGray;
-        border-radius: 5px;
-      }
+        @include font(24px, 20px, bold);
+        color: $violet;
+    }
     }
   }
 
@@ -135,11 +132,14 @@
       @include flexible(block, center, center);
       @include position(68px, none, none, 0);
       position: absolute;
+      display: grid;
+      place-content: center;
       list-style: none;
       background-color: $brightGray;
-      transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;      
       width: 100%;
-      z-index: 1000;
+      height: 100vh;
+      z-index: 999;
 
       .NavLink,
       li {
@@ -147,7 +147,7 @@
         font-weight: bold;
         text-align: center;
         margin: 0;
-        padding: 10px 0;
+        padding: 30px 0;
         width: 100%;
         transition: all 0.5s ease;
         text-decoration: none;
@@ -156,6 +156,7 @@
       .active {
         li {
           color: $violet;
+          @include font(24px, 20px, bold);
         }
       }
     }

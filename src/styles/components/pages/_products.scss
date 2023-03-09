@@ -4,7 +4,7 @@
 
   .productsHeader-Container {
     @include flexible(flex, space-between, center);
-    padding: 130px 10%;
+    padding: 150px 10%;
     gap: 20px;
 
     @media screen and (max-width: 880px) {
