@@ -261,7 +261,10 @@
           padding: 0 20px;
           .popUp-content {
             .close {
-              @include position(8px, -12px, none, none);            
+              @include position(8px, -10px, none, none);  
+              svg{
+               font-size: 26px 
+              }          
             }
 
             .popUp {
@@ -303,6 +306,7 @@
               .popUp-SocialItem {
                 justify-content: center;
                 margin: 0;
+                padding-bottom: 10px;
               }
             }
           }
