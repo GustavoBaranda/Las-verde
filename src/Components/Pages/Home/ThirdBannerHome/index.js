@@ -5,7 +5,7 @@ import {
 } from "react-icons/fa";
 
 const ThirdBannerHome = () => {
-    let thirdBannerHome = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Im%C3%A1genes%20home%2FthirdBanner.png?alt=media&token=8658bd9a-90d3-48cd-87aa-9ada28468d10"   
+    let thirdBannerHome = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Im%C3%A1genes%20home%2FthirdBanner.png?alt=media&token=9b2c270c-99f9-40db-9d98-0c982bc12c17"   
 
     return (
         <div className="thirdBannerHomeContainer">

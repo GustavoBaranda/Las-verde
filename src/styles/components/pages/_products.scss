@@ -57,6 +57,7 @@
         margin: 0 auto;
         background-color: $white;
         max-width: 350px;
+        height: 675px;
         padding: 20px;
         border-radius: 20px;
         text-align: center;
@@ -85,7 +86,8 @@
         padding: 0 20px;
                  
         .popUp-Body {
-          margin-left: -3%;
+          padding: 0 20px;
+          margin-left: -3.5%;
           max-width: 600px;
           max-height: 100%; 
           
@@ -93,17 +95,12 @@
             position: relative;
             
             .close {
-              @include position(10px, -35px, none, none);
+              @include position(8px, -30px, none, none);
               position: absolute;
               font-size: 30px;
-              border-radius: 50%;
               cursor: pointer;
            
               svg {
-                font-size: 1em;
-                fill: $darkGray;
-                margin-right: 10px;
-
                 &:hover {
                   fill: $facebook;
                 }
@@ -123,7 +120,7 @@
               div .productImg {
                 padding-top: auto;
                 text-align: center;
-                width: 300px;
+                max-width: 250px;
               }
 
               div {
@@ -167,7 +164,7 @@
                 .facebookIcon {
                   svg {
                     border-radius: 40%;
-                    font-size: 2em;
+                    font-size: 32px;
                     fill: $darkGray;
                     margin-right: 10px;
 
@@ -181,7 +178,7 @@
                   svg {
                     background-color: $darkGray;
                     border-radius: 30%;
-                    font-size: 2em;
+                    font-size: 32px;
                     fill: $white;
                     margin-left: 10px;
                     margin-right: 10px;
@@ -197,7 +194,7 @@
                   svg {
                     background-color: $darkGray;
                     border-radius: 30%;
-                    font-size: 2em;
+                    font-size: 32px;
                     fill: $white;
                     margin-left: 10px;
 
@@ -216,150 +213,18 @@
   }
 }
 
-// @media screen and (max-width: 1200px) {
-//   .products-Container .cards-products {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1200px) {
+  .products-Container .cards-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-//     .itemContainer {
-//       .popUp-container {
-//         padding-top: 150px;
-//         .popUp-Body .popUp-content {
-//           .close {
-//             @include position(8px, -18px, none, none);
-//           }
-
-//           .popUp {
-//             margin-left: 0;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 1000px) {
-//   .products-Container .cards-products .itemContainer .popUp-container {
-//     .popUp-Body {
-//       .popUp-content {
-//         padding: 0 20px;
-
-//         background-color: none;
-//         .close {
-//           @include position(8px, -15px, none, none);
-//         }
-
-//         .popUp {
-//           margin-left: -1%;
-
-//           div {
-//             h2 {
-//               @include font(26px, 36px, bold);
-//               margin: 16px 0;
-//             }
-
-//             h3 {
-//               @include font(22px, 26px, 700);
-//               margin: 18px 0;
-//             }
-
-//             p {
-//               @include font(14px, 18px, 500);
-//               margin: 10px 0;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 800px) {
-//   .products-Container {
-//     .productsHeader-Container {
-//       display: block;
-//       text-align: center;
-
-//       .headline-Products {
-//         margin: 0 auto;
-//         width: 100%;
-//       }
-
-//       .headline-Image {
-//         img {
-//           width: 100%;
-//         }
-//       }
-//     }
-
-//     .cards-products {
-//       @include flexible(flex, space-around, center);
-//       flex-direction: column;
-//       width: 100%;
-
-//       .itemContainer {
-//         .card {
-//           padding: 10px;
-//         }
-//         .popUp-container {
-//           padding-top: 220px;
-
-//           .popUp-Body {
-//             .popUp-content {
-//               .close {
-//                 @include position(8px, 6px, none, none);
-//               }
-
-//               .popUp {
-//                 padding-left: 5px;
-//                 padding-right: 5px;
-//                 margin-left: 1%;
-
-//                 div .productImg {
-//                   max-width: 250px;
-//                 }
-
-//                 div {
-//                   h2 {
-//                     @include font(24px, 36px, bold);
-//                     margin: 16px 0;
-//                   }
-
-//                   h3 {
-//                     @include font(20px, 26px, 700);
-//                     margin: 18px 0;
-//                   }
-
-//                   p {
-//                     @include font(12px, 18px, 500);
-//                     margin: 10px 0;
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   .products-Container {
     .productsHeader-Container {
       display: block;
       text-align: center;
-
-      .headline-Products {
-        margin: 0 auto;
-        width: 100%;
-      }
-
-      .headline-Image {
-        img {
-          width: 100%;
-        }
-      }
     }
 
     .cards-products {
@@ -367,6 +232,28 @@
       flex-direction: column;
       width: 100%;
 
+      .itemContainer
+      .popUp-container
+      .popUp-Body
+      .popUp-content {
+        .close{
+          @include position(8px, -22px, none, none);
+        }
+        .popUp{
+          margin-left: -1%;
+          div
+          .productImg{
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .products-Container {
+    .cards-products {
       .itemContainer .popUp-container {
         padding-top: 100px;
 
@@ -374,24 +261,14 @@
           padding: 0 20px;
           .popUp-content {
             .close {
-              @include position(4px, -10px, none, none);
-
-              svg {
-                font-size: 30px;
-              }
+              @include position(8px, -12px, none, none);            
             }
 
             .popUp {
               @include flexible(block, center, center);
               text-align: center;
-              width: 100%;
-              height: 100%;
-              background-color: $white;
               padding: 10px;
-              border-radius: 20px;
-              padding-left: 5px;
-              padding-right: 5px;
-              margin-left: 0.5%;
+              margin-left: -0.5%;
 
               div .productImg {
                 max-width: 150px;
@@ -399,15 +276,17 @@
 
               div {
                 h2 {
-                   margin: 5px 0;
+                  margin: 5px 0;
+                  @include font(24px, 32px, bold);
                 }
-
-                h3 {
+                h4 {
                   margin: 5px 0;
                 }
 
-                p {
-                  padding: 0 30px;
+               p {
+                @include font(14px, 14px, 500);
+                  text-align: justify;
+                  padding: 0 20px;
                   margin: 4px 0;
                 }
               }
@@ -416,6 +295,7 @@
                 justify-content:center ;
 
                 p{
+                  @include font(14px, 14px, 500);
                   padding: 0;
                 }
               }
@@ -423,13 +303,6 @@
               .popUp-SocialItem {
                 justify-content: center;
                 margin: 0;
-                .facebookIcon,
-                .instagramIcon,
-                .whastsappIcon {
-                  svg {
-                    font-size: 32px;
-                  }
-                }
               }
             }
           }
