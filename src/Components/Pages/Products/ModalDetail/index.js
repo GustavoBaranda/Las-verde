@@ -59,7 +59,7 @@ const ModalDetail = ({popUpContent, changeContent}) => {
                         </a>
                         <a 
                           className="whastsappIcon" 
-                          href="https://api.whatsapp.com/send?text=http://www.lasverde.com.ar/" 
+                          href="https://wa.me/5492612529012?text=¡Hola%20necesitaria%20mas%20informacion%20sobre%20sus%20productos!" 
                           target="blank">
                             <FaWhatsapp />
                         </a>
