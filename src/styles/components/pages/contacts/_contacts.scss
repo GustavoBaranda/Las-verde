@@ -17,20 +17,20 @@
         margin-left: 17%;
 
         h2 {
-          @include font( 32px, 46px, bold);
+          @include font(32px, 46px, bold);
         }
 
         p {
-          @include font( 20px, 32px, 500);  
+          @include font(20px, 32px, 500);
         }
-        
+
         .textForm-LookingFor {
-          @include font( 24px, 38px, 500);
+          @include font(24px, 38px, 500);
         }
 
         .textFrom-SocialItems {
           @include flexible(flex, flex-start, center);
-       
+
           .facebookIcon {
             svg {
               border-radius: 40%;
@@ -96,41 +96,41 @@
 
       form {
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
         margin: 0 auto;
         padding: 0 5%;
         max-width: 400px;
-    
-        button{
+
+        button {
           margin-top: 10px;
         }
 
-        .input-container{
+        .input-container {
           position: relative;
           margin: 10px 0px 15px 0px;
           margin-right: 8%;
 
-          .label{
+          .label {
             position: absolute;
             padding: 0 2px;
             left: 10px;
             top: 14px;
             color: $darkGray;
-            transition: all .2s;
+            transition: all 0.2s;
             z-index: 1;
           }
 
-          .text-input{
+          .text-input {
             font-family: inherit;
             width: 100%;
-            padding: 0.8em ;
+            padding: 0.8em;
             border: 2px solid $brightGray;
             color: $darkGray;
             background: $white;
             border-radius: 10px;
-            font-size:  18px;
+            font-size: 18px;
             outline: none;
-            transition: all .3s;
+            transition: all 0.3s;
           }
 
           .label::before {
@@ -143,25 +143,24 @@
             width: 100%;
             z-index: -1;
           }
-          
+
           .text-input:focus {
             border: 2px solid $button;
           }
 
-          .text-input:focus+.label, 
-          .text-input:valid+.label,
-          .filled{
-           top: -12px; 
-           padding: 0 2px;;
-
-           color: $button;
-           font-size: 18px;
-          }        
+          .text-input:focus + .label,
+          .text-input:valid + .label,
+          .filled {
+            top: -12px;
+            padding: 0 2px;
+            color: $button;
+            font-size: 18px;
+          }
 
           .text-input::placeholder {
             font-size: 16px;
             opacity: 0;
-            transition: all .3s;
+            transition: all 0.3s;
           }
 
           .text-input:focus::placeholder {
@@ -175,15 +174,14 @@
           }
 
           .errorMessage {
-            @include font( 12px, 18px, bold);
-            position: absolute;
+            @include font(12px, 18px, bold);
             color: $error;
             bottom: -20px;
-            margin: 0;
+            margin: 4px;
           }
 
-          .errorMessage-textArea{
-            @include font( 12px, 18px, bold);
+          .errorMessage-textArea {
+            @include font(12px, 18px, bold);
             position: absolute;
             color: $error;
             bottom: -16px;
@@ -221,7 +219,7 @@
         text-align: right;
         top: 80px;
 
-        @media screen and  (max-width: 880px) {
+        @media screen and (max-width: 880px) {
           text-align: center;
           padding: 0px;
 
@@ -231,11 +229,11 @@
         }
 
         h2 {
-          @include font( 32px, 42px, bold);
+          @include font(32px, 42px, bold);
         }
 
         p {
-          @include font( 20px, 32px, 500);
+          @include font(20px, 32px, 500);
         }
       }
     }
@@ -305,7 +303,7 @@
       .contactLocation-maps {
         gap: 10px;
 
-        .maps{
+        .maps {
           max-width: 100%;
         }
 
@@ -329,15 +327,15 @@
     .textForm-container {
       .textForm {
         h2 {
-          @include font( 29px, 46px, bold);
+          @include font(29px, 46px, bold);
         }
 
         p {
-          @include font( 18px, 32px, 500);
+          @include font(18px, 32px, 500);
         }
 
         .textForm-LookingFor {
-          @include font( 22px, 38px, 500);
+          @include font(22px, 38px, 500);
         }
 
         .contact-data {

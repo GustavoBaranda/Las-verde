@@ -10,7 +10,7 @@
       @include font(32px, 46px, bold);
     }
 
-    h4{
+    h4 {
       @include font(20px, 32px, 500);
     }
 
@@ -18,8 +18,8 @@
       h2 {
         @include font(24px, 46px, bold);
       }
-  
-      h4{
+
+      h4 {
         @include font(16px, 32px, 500);
       }
     }
@@ -27,7 +27,7 @@
 
   .firstBannerHome-items {
     @include flexible(flex, space-around, center);
-    margin: 70px auto 100px auto;
+    margin: 70px auto 7px auto;
 
     div {
       img {
@@ -41,6 +41,9 @@
     }
 
     @media screen and (max-device-width: 520px) {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+
       div {
         img {
           width: 50px;

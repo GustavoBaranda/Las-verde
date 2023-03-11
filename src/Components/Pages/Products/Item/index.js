@@ -9,7 +9,7 @@ const Item = ({ product, popUpTogle, popUpContent, changeContent }) => {
         <h2>{product.title}</h2>
         <p>{product.ingredients}</p>
         <button className="btn-basic" onClick={() => changeContent(product)}>
-        VER DESCRIPCIÓN
+          VER DETALLE
         </button>
       </div>
       {popUpTogle && (

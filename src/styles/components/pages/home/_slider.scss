@@ -26,23 +26,21 @@
       position: absolute;
       max-width: 100%;
       color: $white;
-       
-      h2{
+
+      h2 {
         @include font(32px, 46px, bold);
-        margin: 0
+        margin: 0;
       }
-      
     }
-    
+
     .subTittleSliderContainer {
       @include position(45%, none, none, 6%);
       position: absolute;
       max-width: 500px;
       color: $white;
-         
-      h3{
+
+      h3 {
         @include font(26px, 32px, 500);
-    
       }
     }
 
@@ -78,7 +76,7 @@
     @include position(50%, none, none, 20px);
     transform: translateY(-60%);
     opacity: 0.4;
-   
+
     &:hover {
       opacity: 1;
     }
@@ -88,7 +86,7 @@
     @include position(50%, 20px, none, none);
     transform: translateY(-60%);
     opacity: 0.4;
-    
+
     &:hover {
       opacity: 1;
     }
@@ -121,6 +119,18 @@
   .container-slider {
     margin: 150px 10px 100px 15px;
 
+    .btn-slide {
+      width: 40px;
+      height: 40px;
+    }
+
+    .container-dots {
+      .dot {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
     .slide {
       text-align: center;
 
@@ -131,8 +141,8 @@
 
       .tittleSliderContainer {
         @include position(25%, 0, none, 0);
-        
-        h2{
+
+        h2 {
           @include font(24px, 46px, bold);
         }
         margin: auto;
@@ -142,7 +152,9 @@
         @include position(55%, 0, none, 0);
         margin: auto;
 
-        h3{
+        h3 {
+          width: 80%;
+          margin: auto;
           @include font(18px, 22px, 700);
         }
       }

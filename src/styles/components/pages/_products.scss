@@ -45,7 +45,7 @@
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 50px;
-    
+
     .itemContainer {
       place-content: center;
       max-width: 100%;
@@ -62,21 +62,21 @@
         border-radius: 20px;
         text-align: center;
         margin-bottom: 50px;
-        
+
         img {
           width: 100%;
         }
-        
+
         h2 {
           @include font(24px, 46px, bold);
         }
-        
+
         p {
           @include font(16px, 22px, 500);
           min-height: 88px;
         }
       }
-      
+
       .popUp-container {
         @include position(0, 0, 0, 0);
         display: grid;
@@ -84,22 +84,22 @@
         position: fixed;
         background-color: rgba(0, 0, 0, 0.3);
         padding: 0 20px;
-                 
+
         .popUp-Body {
           padding: 0 20px;
           margin-left: -3.5%;
           max-width: 600px;
-          max-height: 100%; 
-          
+          max-height: 100%;
+
           .popUp-content {
             position: relative;
-            
+
             .close {
               @include position(8px, -30px, none, none);
               position: absolute;
               font-size: 30px;
               cursor: pointer;
-           
+
               svg {
                 &:hover {
                   fill: $facebook;
@@ -108,7 +108,7 @@
             }
 
             .popUp {
-              @include flexible(flex, center, center);              
+              @include flexible(flex, center, center);
               flex-direction: row;
               width: 100%;
               height: 100%;
@@ -134,24 +134,23 @@
                   margin: 10px 0;
                 }
 
-                h4{
+                h4 {
                   @include font(16px, 16px, 700);
-                  margin: 10px 0 0;
+                  margin: 40px 0 0;
                 }
 
                 p {
                   @include font(16px, 22px, 500);
-                  margin: 10px 0;
-                  text-align: justify;
+                  margin: 10px 25px 0px 0px;
                 }
               }
 
-              .presentations{
+              .presentations {
                 @include flexible(flex, flex-start, center);
                 margin: 0;
                 gap: 5px;
 
-                p{
+                p {
                   margin: 10px 0 20px 0;
                 }
               }
@@ -193,8 +192,9 @@
                 .whastsappIcon {
                   svg {
                     background-color: $darkGray;
-                    border-radius: 30%;
-                    font-size: 32px;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    padding: 2px;
                     fill: $white;
                     margin-left: 10px;
 
@@ -232,17 +232,13 @@
       flex-direction: column;
       width: 100%;
 
-      .itemContainer
-      .popUp-container
-      .popUp-Body
-      .popUp-content {
-        .close{
+      .itemContainer .popUp-container .popUp-Body .popUp-content {
+        .close {
           @include position(8px, -22px, none, none);
         }
-        .popUp{
+        .popUp {
           margin-left: -1%;
-          div
-          .productImg{
+          div .productImg {
             max-width: 200px;
           }
         }
@@ -261,10 +257,10 @@
           padding: 0 20px;
           .popUp-content {
             .close {
-              @include position(8px, -10px, none, none);  
-              svg{
-               font-size: 26px 
-              }          
+              @include position(8px, -10px, none, none);
+              svg {
+                font-size: 26px;
+              }
             }
 
             .popUp {
@@ -282,22 +278,22 @@
                   margin: 5px 0;
                   @include font(24px, 32px, bold);
                 }
+
                 h4 {
-                  margin: 5px 0;
+                  margin-top: 30px;
                 }
 
-               p {
-                @include font(14px, 14px, 500);
-                  text-align: justify;
+                p {
+                  @include font(14px, 20px, 500);
+                  text-align: center;
                   padding: 0 20px;
-                  margin: 4px 0;
                 }
               }
 
-              .presentations{
-                justify-content:center ;
+              .presentations {
+                justify-content: center;
 
-                p{
+                p {
                   @include font(14px, 14px, 500);
                   padding: 0;
                 }
