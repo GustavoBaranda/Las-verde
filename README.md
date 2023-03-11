@@ -1,6 +1,6 @@
 # LAS VERDE
 
-Esta web creada con create-react-app es parte de un proyecto real realizado por estudiantes de Coder House como parte de los beneficios del top 10. El emprendimiento "Las verde" comercializa jugos naturales, en su pagina se puede ver la información general de la marca, su historia, sus valores, sus procesos productivos, el catalogo de sus productos y sus medios de contacto.
+Esta web creada con create-react-app es parte de un proyecto real realizado por estudiantes de Coder House como parte de los beneficios del top 10. El emprendimiento "Las verde" comercializa jugos naturales, en su página se puede ver la información general de la marca, su historia, sus valores, sus procesos productivos, el catálogo de sus productos y sus medios de contacto.
 
 ## Tecnologías usadas
 
