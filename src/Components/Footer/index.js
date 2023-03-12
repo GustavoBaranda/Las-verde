@@ -21,7 +21,6 @@ const Footer = () => {
             +54 261 594-5894 - {" "} 
           </a>
           <a 
-            // className="footerContainer-location_mail" 
             href="mailto:lasverde.tiendasaludable@gmail.com" 
             target="blank" 
           > 

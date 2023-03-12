@@ -1,6 +1,6 @@
-.aboutContainer {
+.aboutContainer { 
   padding-top: 150px;
-
+ 
   .historyContainer {
     @include flexible(flex, space-around, center);
     gap: 8%;
@@ -8,10 +8,10 @@
     margin: 0 3%;
     text-align: justify;
   }
-
+ 
   .historyContent {
     height: 100%;
-
+ 
     .historyTitle {
       @include font(32px, 46px, bold);
     }

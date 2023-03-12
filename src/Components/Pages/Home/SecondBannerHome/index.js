@@ -20,7 +20,7 @@ const SecondBannerHome = () => {
             </div>
             <img src={secondBannerHome} alt="secondBannerHome" />
         </div>
-    )
-}
+    );
+};
 
 export default SecondBannerHome;

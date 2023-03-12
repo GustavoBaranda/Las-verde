@@ -29,7 +29,7 @@ const MissionAndVision = () => {
       </figure>
     </div>
   </div>
-  )
-}
+  );
+};
 
 export default MissionAndVision;

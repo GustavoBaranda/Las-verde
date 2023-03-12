@@ -19,7 +19,7 @@ const ProductHeader = () => {
         </Link>
       </div>
       <div className="headline-Image">
-        <img src={frutas2} alt="frutas" />
+        <img src={ frutas2 } alt="frutas" />
       </div>
     </div>
   );

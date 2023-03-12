@@ -253,9 +253,8 @@
 @media screen and (max-width: 550px) {
   .products-Container {
     .cards-products {
-      .itemContainer .popUp-container {
-        padding-top: 100px;
-
+      .itemContainer
+      .popUp-container {
         .popUp-Body {
           padding: 0 20px;
           .popUp-content {
@@ -270,7 +269,7 @@
               @include flexible(block, center, center);
               text-align: center;
               padding: 10px;
-              margin-left: -0.5%;
+              margin-left: -1%;
 
               div .productImg {
                 max-width: 150px;

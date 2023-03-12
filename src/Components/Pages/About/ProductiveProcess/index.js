@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ProductiveProcess = () => {
 
@@ -22,7 +22,7 @@ const ProductiveProcess = () => {
       <img src={ productiveProcess } alt="Proceso de elaboración de los jugos" />
     </figure>
   </div>
-  )
-}
+  );
+};
 
-export default ProductiveProcess
+export default ProductiveProcess;

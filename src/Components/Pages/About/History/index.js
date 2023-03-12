@@ -26,7 +26,7 @@ const History = () => {
         <img src={ juiceRail } alt="Foto del proceso de elaboración de los jugos" />
       </figure>
     </div>
-  )
-}
+  );
+};
 
-export default History
+export default History;
