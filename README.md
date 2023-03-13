@@ -58,16 +58,16 @@ El mismo proyecto fue desplegado en Vercel para que lo navegar.</br>
 https://las-verde.vercel.app/
 La pagina esta adaptada para que se visualice correctamente en todos los dispositivos.
 
-##Contacto
+## Contacto
 
 <h3 align="left">Gustavo Baranda: 
 <a href="https://www.linkedin.com/in/gustavobaranda/" target="blank">
-<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gustavobaranda/" height="30" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gustavobaranda/" height="20" width="20" />
 </a>
 </h3>
 
 <h3 align="left">Melisa Caputo:
 <a href="https://www.linkedin.com/in/melisa-caputo/" target="blank">
-<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/melisa-caputo/" height="30" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/melisa-caputo/" height="20" width="20" />
 </a>
 </h3>
