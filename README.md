@@ -1,47 +1,75 @@
-# LAS VERDE
+## LAS VERDE
+## Descripción
+Esta aplicacion fue creada con create-react-app es parte de un proyecto real,</br>
+realizado por estudiantes de Coder House como parte de los beneficios del top 10.</br>
+El emprendimiento "Las verde" comercializa jugos naturales,</br>
+en la aplicacion se puede ver la información general de la marca,</br>
+su historia, sus valores, sus procesos productivos, el catálogo de sus productos</br>
+y sus medios de contacto.
+La aplicación permite conectarse con una base de datos de `Firebase`.</br>
+Permite seleccionar ciertos productos, visualizar los detalles de los mismos,</br>
 
-Esta web creada con create-react-app es parte de un proyecto real realizado por estudiantes de Coder House como parte de los beneficios del top 10. El emprendimiento "Las verde" comercializa jugos naturales, en su página se puede ver la información general de la marca, su historia, sus valores, sus procesos productivos, el catálogo de sus productos y sus medios de contacto.
+**Tecnologías y librerías:**
+<p style="display: flex;  ">
+<img height="20" alt="REACT" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png">
+<img height="20" alt="CSS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png">
+<img height="20" alt="HTML" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png">
+<img height="20" alt="JS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
+<img height="20" alt="FIREBASE" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png">
+<img height="20" alt="SASS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
+</p>
+- Interfaz realizada con **ReactJS - Create React App**</br>
+- Estilos con **Sass**</br>
+- Ruteo con **React Router Dom**</br>
+- Backend con **Firebase**
 
-## Tecnologías usadas
+## Descargar y correr el proyecto
 
-- Firebase (firestore & storage)
-- react-router-dom
-- react-icons
-- SASS
+### Instalación 🔧
 
-## Uso
+Para descargar el proyecto pueden descargar el repositorio en formato zip_
 
-En la descripción del repositorio se puede encontrar el link de vercel para acceder al deploy.
+1 - Ir a "Code" -> "Dowload Zip"
 
-## Instalación
+2 - Descomprimir el archivo
 
-1. Ubicado en el repositorio, encima de la lista de archivos, hace clic en donde dice "código".
+3 - En la carpeta donde se encuentra en "package.json" ejecutar en una terminal:
 
-2. Elegí el método "HTTPS" y copia la dirección URL del repositorio.
+### `npm install`
 
-3. Abrí la consola de comandos que prefieras.
+4 - Una vez finalizado, ejecutar:
 
-4. Cambia el directorio de trabajo actual a la ubicación en donde quieras clonar el directorio.
+### `npm start`
 
-5. Escribí "git clone" y pega la dirección URL que copiaste antes.
+Se abre una pestaña del navegador en el puerto 3000:
 
-```
-git clone https://github.com/USERNAME/REPOSITORY
-```
+### Sino copiar esta URL y pegarla en el navegador: `http://localhost:3000`
 
-6. Presiona **Enter** para crear el clon local.
+### Instalación con git clone🔧
 
-```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `Spoon-Knife`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
+Se puede clonar el repositorio, ingresando a una terminal y ejecutando:
 
-7. Una vez clonado el repositorio, cambia el directorio a la ubicación del mismo.
+https://github.com/GustavoBaranda/Las-verde.git
 
-8. Ejecuta los comandos "npm install" y "npm start", respectivamente.
+Luego continuar con el paso 3 de la otra forma
 
-9. ¡Listo! La app ya debería estar corriendo correctamente.
+## Despliegue 📦
+
+El mismo proyecto fue desplegado en Vercel para que lo navegar.</br>
+https://las-verde.vercel.app/
+La pagina esta adaptada para que se visualice correctamente en todos los dispositivos.
+
+<h3 align="left">Gustavo Baranda:</h3>
+<p align="left">
+<a href="https://www.linkedin.com/in/gustavobaranda/" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gustavobaranda/" height="30" width="40" />
+</a>
+</p>
+
+
+<h3 align="left">Melisa Caputo:</h3>
+<p align="left">
+<a href="https://www.linkedin.com/in/melisa-caputo/" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/melisa-caputo/" height="30" width="40" />
+</a>
+</p>
