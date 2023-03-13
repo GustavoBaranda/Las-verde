@@ -57,7 +57,7 @@
         margin: 0 auto;
         background-color: $white;
         max-width: 350px;
-        height: 675px;
+        height: 580px;
         padding: 20px;
         border-radius: 20px;
         text-align: center;
@@ -73,7 +73,6 @@
 
         p {
           @include font(16px, 22px, 500);
-          min-height: 60px;
           width: 75%;
         }
       }
@@ -120,8 +119,8 @@
               border-radius: 20px;
               margin: 0 20% 0 0;
 
-              div .productImg {
-                padding-top: auto;
+              div
+              .productImg {
                 text-align: center;
                 max-width: 250px;
               }
@@ -139,37 +138,38 @@
 
                 h4 {
                   @include font(16px, 16px, 700);
-                  margin: 40px 0 0;
+                  margin: 0;
                 }
 
                 p {
                   @include font(16px, 22px, 500);
-                  margin: 10px 25px 0px 0px;
+                  text-align: justify;
+                  padding-right: 40px;
+                  margin: 10px 0;
                 }
               }
 
               .presentations {
                 @include flexible(flex, flex-start, center);
                 margin: 0;
-                gap: 5px;
-
+                gap: 10px;
+                
                 p {
-                  margin: 10px 0 20px 0;
+                  padding: 5px 0 15px;
                 }
               }
 
               .popUp-SocialItem {
                 @include flexible(flex, flex-start, center);
                 gap: 20px;
-                margin-bottom: 20px;
-
+            
                 .facebookIcon {
+                  align-items: center;
                   svg {
                     border-radius: 40%;
                     font-size: 32px;
                     fill: $darkGray;
-                    margin-right: 10px;
-
+                    
                     &:hover {
                       fill: $facebook;
                     }
@@ -177,14 +177,13 @@
                 }
 
                 .instagramIcon {
+                  align-items: center;
                   svg {
                     background-color: $darkGray;
                     border-radius: 30%;
                     font-size: 32px;
                     fill: $white;
-                    margin-left: 10px;
-                    margin-right: 10px;
-
+               
                     &:hover {
                       background-color: $instagram;
                       fill: $white;
@@ -193,14 +192,13 @@
                 }
 
                 .whastsappIcon {
+                  align-items: center;
                   svg {
                     background-color: $darkGray;
                     border-radius: 50%;
-                    font-size: 30px;
-                    padding: 2px;
+                    font-size: 32px;
                     fill: $white;
-                    margin-left: 10px;
-
+                   
                     &:hover {
                       background-color: $whatsapp;
                       fill: $white;
@@ -235,12 +233,14 @@
       flex-direction: column;
       width: 100%;
 
-      .itemContainer .popUp-container .popUp-Body .popUp-content {
+      .itemContainer
+      .popUp-container
+      .popUp-Body
+      .popUp-content {
         .close {
           @include position(8px, -22px, none, none);
         }
         .popUp {
-          margin-left: -1%;
           div .productImg {
             max-width: 200px;
           }
@@ -282,7 +282,7 @@
                 }
 
                 h4 {
-                  margin-top: 30px;
+                  padding: 10px 0;
                 }
 
                 p {
@@ -297,12 +297,14 @@
 
                 p {
                   @include font(14px, 14px, 500);
-                  padding: 0;
+                  padding-bottom: 15px;
+                  margin: 0;
                 }
               }
 
               .popUp-SocialItem {
                 justify-content: center;
+                align-items: center;
                 margin: 0;
                 padding-bottom: 10px;
               }
