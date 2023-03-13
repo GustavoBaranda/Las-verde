@@ -12,7 +12,6 @@ Permite seleccionar ciertos productos, visualizar los detalles de los mismos,</b
 **Tecnologías y librerías:**
 <p style="display: flex;  ">
 <img height="20" alt="REACT" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png">
-<img height="20" alt="CSS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png">
 <img height="20" alt="HTML" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png">
 <img height="20" alt="JS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
 <img height="20" alt="FIREBASE" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png">
@@ -59,17 +58,16 @@ El mismo proyecto fue desplegado en Vercel para que lo navegar.</br>
 https://las-verde.vercel.app/
 La pagina esta adaptada para que se visualice correctamente en todos los dispositivos.
 
-<h3 align="left">Gustavo Baranda:</h3>
-<p align="left">
+##Contacto
+
+<h3 align="left">Gustavo Baranda: 
 <a href="https://www.linkedin.com/in/gustavobaranda/" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gustavobaranda/" height="30" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gustavobaranda/" height="30" width="40" />
 </a>
-</p>
+</h3>
 
-
-<h3 align="left">Melisa Caputo:</h3>
-<p align="left">
+<h3 align="left">Melisa Caputo:
 <a href="https://www.linkedin.com/in/melisa-caputo/" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/melisa-caputo/" height="30" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/melisa-caputo/" height="30" width="40" />
 </a>
-</p>
+</h3>
