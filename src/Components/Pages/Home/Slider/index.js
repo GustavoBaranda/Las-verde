@@ -31,7 +31,7 @@ const Slider = () => {
 
   const moveDot = ( index ) => {
     setSlideIndex( index );
-  }; 
+  };
 
   return ( 
     <div className="container-slider"> 

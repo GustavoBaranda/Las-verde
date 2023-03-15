@@ -18,9 +18,9 @@ const Item = ( { product, popUpTogle, popUpContent, changeContent } ) => {
             popUpContent={ popUpContent }
             changeContent={ changeContent }
           /> 
-        )};
+        )}
     </div> 
-  ); 
-}; 
+  ) 
+} 
  
 export default Item; 

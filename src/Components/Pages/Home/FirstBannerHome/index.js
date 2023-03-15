@@ -20,7 +20,7 @@ const FirstBannerHome = () => {
               )
             }
           )
-        };
+        }
       </div>
       <div className="firstBannerHome-btnContainer">
         <Link to="/products">

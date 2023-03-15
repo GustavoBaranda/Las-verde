@@ -21,10 +21,10 @@ const Footer = () => {
             +54 261 594-5894 - {" "} 
           </a>
           <a 
-            href="mailto:lasverde.tiendasaludable@gmail.com" 
+            href="mailto:info@lasverde.com.ar" 
             target="blank" 
           > 
-            lasverde.tiendasaludable@gmail.com 
+            info@lasverde.com.ar 
           </a>
         </div> 
       </div> 

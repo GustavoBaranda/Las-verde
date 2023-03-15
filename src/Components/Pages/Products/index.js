@@ -53,8 +53,8 @@ const Products = () => {
                       changeContent={ changeContent  }
                       popUpTogle={  popUpTogle  }
                     />
-                  );
-                })};
+                  )
+                })}
             </div>
           </div>  
         ) : (

@@ -32,7 +32,7 @@ const TextForm = () => {
           </a>
           <a
             className="instagramIcon"
-            href="https://es-la.facebook.com/lasverde.tiendasaludable/"
+            href="https://www.instagram.com/las.verde/?hl=es"
             target="blank"
           >
             <FaInstagram />
