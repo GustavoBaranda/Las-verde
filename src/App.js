@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Navigate, Route } from "react-router-dom";
+import { HashRouter , Routes, Navigate, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -13,7 +13,7 @@ import "./styles/main.scss";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <NavBar />
         <Routes>
@@ -26,7 +26,7 @@ function App() {
         </Routes>
         <WhatsApp />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
