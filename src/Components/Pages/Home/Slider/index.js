@@ -70,8 +70,8 @@ const Slider = () => {
               }
               <img src={ item.img } alt={ item.textimg } />
             </div>
-          );
-        })};
+          )
+        })}
       <BtnSlider moveSlide={ nextSlide } direction={ "next" } />
       <BtnSlider moveSlide={ prevSlide } direction={ "prev" } />
 
@@ -82,7 +82,7 @@ const Slider = () => {
               onClick={ () => moveDot( index + 1 ) }
               className={ slideIndex === index + 1 ? "dot active" : "dot" }
             ></div>
-          ))};
+          ))}
       </div> 
     </div> 
   ); 
