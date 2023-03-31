@@ -11,7 +11,7 @@ const SecondBannerHome = () => {
                 <h2>¿Conoces nuestro proceso productivo?</h2>
             </div> 
             <div className="secondBannerHome-SubTittle">
-                <h4>Todos los días trabajamos arduamente para entregarte los productos más frescos y con la mejor calidad del mercado. ¿Pero? ¿Cómo lo hacemos?</h4>
+                <h4>Todos los días trabajamos arduamente para entregarte los productos más frescos y con la mejor calidad del mercado. Pero, ¿Cómo lo hacemos?</h4>
             </div>
             <div className="btn-container">    
                 <Link to="/about">

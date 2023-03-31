@@ -13,14 +13,14 @@ const TextForm = () => {
   return (
     <div className="textForm-container">
       <div className="textForm">
-        <h2>¿Tienes alguna duda? <br /> ¡Escríbenos!</h2>
+        <h2>¿Tenes alguna duda? <br /> ¡Escribinos!</h2>
         <p>
-          En Las Verde estamos para ayudarte en lo que necesites! Rellena el
-          siguiente formulario y nos contactaremos contigo a la brevedad.
+          En Las Verde estamos para ayudarte en lo que necesites!<br /> Completa el
+          siguiente formulario y nos contactaremos a la brevedad.
         </p>
         <img src={ barra } alt="barra" />
         <p className="textForm-LookingFor">
-          También puedes encontrarnos aquí:
+          También podés encontrarnos en:
         </p>
         <div className="textFrom-SocialItems">
           <a

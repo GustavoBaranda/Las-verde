@@ -11,7 +11,7 @@ const ProductiveProcess = () => {
         Proceso productivo
       </h2>
       <p className="productiveProcessText">
-      El proceso de elaboración de nuestros jugos comienza por la utilización de fruta y verdura fresca proveniente de proveedores locales y/o plantaciones orgánicas.<br /><br />
+      El proceso de elaboración de nuestros jugos comienza por la utilización de fruta y verdura fresca proveniente de proveedores locales y plantaciones orgánicas.<br /><br />
       Luego de seleccionar manualmente los ingredientes para nuestros jugos, los mismos son procesados en conjunto por sabor, para crear una densa pulpa cargada de nutrientes.<br /><br />
       La pulpa obtenida es prensada en frío con una prensa hidráulica de 2 toneladas para extraer de entre 3 a 5 veces más enzimas, nutrientes y vitaminas en comparación con un jugo convencional.<br /><br />
       Los ingredientes son combinados para crear deliciosas y beneficiosas recetas que tienen como principal fin, ayudarte a nutrir tu cuerpo y tu mente.<br /><br />

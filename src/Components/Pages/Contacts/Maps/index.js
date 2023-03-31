@@ -18,7 +18,7 @@ const Maps = () => {
       />
       <div className="contactLocation-info">
         <h2>
-          ¿Todavía no nos encuentras?<br />
+          ¿Todavía no nos encontrás?<br />
           Mira el mapa!
         </h2>
         <p>
@@ -26,7 +26,7 @@ const Maps = () => {
         </p>
         <img src={ barra } alt="barra" />
         <p>
-          Horario: De lunes a viernes de 8:00 Am a 18:30 PM
+          Horario: De lunes a viernes de 8:00 a 18:30hs.
         </p>
         <img src={ frutas } alt="frutas" />
       </div>
