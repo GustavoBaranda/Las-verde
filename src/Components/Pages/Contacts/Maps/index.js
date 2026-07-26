@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Maps = () => {
+import frutas from '../../../../assets/frutas.png';
+import barra from '../../../../assets/barra.png';
 
-  let frutas = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Imagenes%2Ffrutas.png?alt=media&token=9820f274-d364-46c2-bf48-b81872d093b0"
-  
-  let barra = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Imagenes%2Fbarra.png?alt=media&token=6d6638b1-03b0-411e-89c2-47e0749077e4"
+const Maps = () => {
 
   return (
     <div className="contactLocation-maps" >

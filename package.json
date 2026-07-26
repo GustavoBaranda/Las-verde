@@ -5,7 +5,8 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0", 
+    "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^17.4.2",
     "firebase": "^9.16.0",
     "normalize.css": "^8.0.1",
     "react-icons": "^4.7.1",
@@ -14,7 +15,7 @@
     "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://lasverde.com.ar",  
+  "homepage": "https://lasverde.com.ar",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,8 +24,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {

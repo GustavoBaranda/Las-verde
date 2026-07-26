@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProductiveProcess = () => {
+import productiveProcess from '../../../../assets/procesoProductivo.png';
 
-  let productiveProcess = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/about%20imagenes%2FproductiveProcess.png?alt=media&token=43821304-3fd0-4a68-8ff1-2d1016ac36ce"
+const ProductiveProcess = () => {
 
   return (
     <div className="productiveProcessContainer">

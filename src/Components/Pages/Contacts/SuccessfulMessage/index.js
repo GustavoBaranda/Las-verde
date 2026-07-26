@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom' 
 
-const SuccessfulMessage = () => {
+import frutas from '../../../../assets/frutas.png';
 
-  let frutas = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Imagenes%2Ffrutas.png?alt=media&token=9820f274-d364-46c2-bf48-b81872d093b0"
+const SuccessfulMessage = () => {
 
   return (
     <div className="successContainer">

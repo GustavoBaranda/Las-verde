@@ -6,9 +6,9 @@ import {
   FaEnvelope, 
 } from "react-icons/fa"; 
  
+import barra from '../../../../assets/barra.png';
+
 const TextForm = () => {
-  
-  let barra = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Imagenes%2Fbarra.png?alt=media&token=6d6638b1-03b0-411e-89c2-47e0749077e4"
 
   return (
     <div className="textForm-container">

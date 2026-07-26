@@ -4,8 +4,9 @@ import {
     FaInstagram 
 } from "react-icons/fa";
 
+import thirdBannerHome from '../../../../assets/thirdBanner.png';
+
 const ThirdBannerHome = () => {
-    let thirdBannerHome = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/Im%C3%A1genes%20home%2FthirdBanner.png?alt=media&token=9b2c270c-99f9-40db-9d98-0c982bc12c17"   
 
     return (
         <div className="thirdBannerHomeContainer">
@@ -25,7 +26,7 @@ const ThirdBannerHome = () => {
                 </a>
                 <a
                     className="instagramIcon"
-                    href="https://www.instagram.com/las.verde/?hl=es"
+                    href="https://www.instagram.com/las.verde.jugos/?hl=es"
                     target="blank"
                 >
                     <FaInstagram />

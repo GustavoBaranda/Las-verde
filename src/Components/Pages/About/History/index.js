@@ -1,7 +1,8 @@
 import React from 'react'
 
+import juiceRail from '../../../../assets/historia.png';
+
 const History = () => {
-  let juiceRail = "https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/about%20imagenes%2Fhistoryimage.png?alt=media&token=9f2adf99-78e3-4d0c-a817-b72732aaff62"
   return (
     <div className="historyContainer">
       <div className="historyContent">

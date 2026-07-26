@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAaXYMLJWlmUyPuRTRjkO0K6DnuAM3Z9FI",
-  authDomain: "las-verde-web.firebaseapp.com",
-  projectId: "las-verde-web",
-  storageBucket: "las-verde-web.appspot.com",
-  messagingSenderId: "145066438818",
-  appId: "1:145066438818:web:49cacd143259264c3027fb",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);

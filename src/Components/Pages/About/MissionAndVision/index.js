@@ -1,8 +1,8 @@
 import React from 'react';
 
+import naranjada from '../../../../assets/visionNaranjada.png';
+
 const MissionAndVision = () => {
-  
-  let naranjada ="https://firebasestorage.googleapis.com/v0/b/las-verde-web.appspot.com/o/about%20imagenes%2FmissionAndVisionNaranjada.png?alt=media&token=3446e62f-7e92-46fe-81d1-71797ec27898"
 
   return (
     <div className="missionAndVisionContainer">
