@@ -11,7 +11,7 @@
   **Aplicación Web Institucional y Catálogo de Productos**  
   *Proyecto desarrollado para un emprendimiento real y reconocido dentro del **Top 10** del curso de ReactJS en Coderhouse.*
 
-  [🌐 Ver Demo en Vivo](https://las-verde.vercel.app/) • [🌐 Sitio Web Oficial](https://lasverde.com.ar)
+  [🌐 Ver Demo en Vivo](https://las-verde.vercel.app/) 
 
 </div>
 
