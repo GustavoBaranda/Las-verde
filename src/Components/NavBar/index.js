@@ -41,7 +41,7 @@ const NavBar = () => {
           </a> 
           <a 
             className="instagramIcon" 
-            href="https://www.instagram.com/las.verde/?hl=es" 
+            href="https://www.instagram.com/las.verde.jugos/?hl=es" 
             target="blank" 
           >
             <FaInstagram /> 

@@ -61,7 +61,7 @@ const Products = () => {
           <div className="spinner">
             <Spinner />
           </div>
-        )};
+        )}
     </div>
   );
 };
