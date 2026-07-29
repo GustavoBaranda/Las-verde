@@ -1,19 +1,18 @@
 # 🌿 Las Verde - Jugos 100% Naturales
 
-<div align="center">
+<p>
+  <img align="left" src="https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react&logoColor=black" alt="React" />
+  <img align="left" src="https://img.shields.io/badge/Firebase-9.16.0-FFCA28?style=flat&logo=firebase&logoColor=black" alt="Firebase" />
+  <img align="left" src="https://img.shields.io/badge/Sass-1.57.1-CC6699?style=flat&logo=sass&logoColor=white" alt="Sass" />
+  <img align="left" src="https://img.shields.io/badge/React_Router-v6-CA4245?style=flat&logo=react-router&logoColor=white" alt="React Router" />
+  <img align="left" src="https://img.shields.io/badge/Vercel-Deployed-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
+<br clear="all">
 
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Firebase](https://img.shields.io/badge/Firebase-9.16.0-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Sass](https://img.shields.io/badge/Sass-1.57.1-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)
+**Aplicación Web Institucional y Catálogo de Productos**  
+*Proyecto desarrollado para un emprendimiento real y reconocido dentro del **Top 10** del curso de ReactJS en Coderhouse.*
 
-  **Aplicación Web Institucional y Catálogo de Productos**  
-  *Proyecto desarrollado para un emprendimiento real y reconocido dentro del **Top 10** del curso de ReactJS en Coderhouse.*
-
-  [🌐 Ver Demo en Vivo](https://las-verde.vercel.app/) 
-
-</div>
+[🌐 Ver Demo en Vivo](https://las-verde.vercel.app/)
 
 ---
 
@@ -43,12 +42,38 @@ Esta aplicación web fue diseñada y desarrollada para brindar una experiencia d
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Frontend**: [React.js](https://reactjs.org/) (Create React App)
-- **Ruteo**: [React Router Dom v6](https://reactrouter.com/) (implementado con `HashRouter` para compatibilidad de despliegue)
-- **Estilos**: [Sass (SCSS)](https://sass-lang.com/) con arquitectura modular de componentes y [Normalize.css](https://necolas.github.io/normalize.css/)
-- **Base de Datos / BaaS**: [Firebase Firestore](https://firebase.google.com/)
-- **Iconos**: [React Icons](https://react-icons.github.io/react-icons/)
-- **Despliegue**: [Vercel](https://vercel.com/)
+### 💻 Frontend
+<p>
+  <img align="left" src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" alt="React.js" />
+  <img align="left" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img align="left" src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
+</p>
+<br clear="all">
+
+### 🎨 Estilos
+<p>
+  <img align="left" src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white" alt="Sass (SCSS)" />
+  <img align="left" src="https://img.shields.io/badge/Normalize.css-000000?style=flat&logo=css3&logoColor=white" alt="Normalize.css" />
+</p>
+<br clear="all">
+
+### 🗺️ Ruteo
+<p>
+  <img align="left" src="https://img.shields.io/badge/React_Router_v6-CA4245?style=flat&logo=react-router&logoColor=white" alt="React Router v6" />
+</p>
+<br clear="all">
+
+### 🔥 Backend / BaaS
+<p>
+  <img align="left" src="https://img.shields.io/badge/Firebase_Firestore-FFCA28?style=flat&logo=firebase&logoColor=black" alt="Firebase Firestore" />
+</p>
+<br clear="all">
+
+### 🚀 Despliegue
+<p>
+  <img align="left" src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
+<br clear="all">
 
 ---
 
@@ -127,11 +152,16 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 14 o supe
 Proyecto realizado por:
 
 - **Gustavo Baranda**  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavobaranda/) 
-  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/GustavoBaranda)
+  <img align="left" src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/gustavobaranda/"> </a>
+  <img align="left" src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" />
+  <a href="https://github.com/GustavoBaranda"> </a>
+<br clear="all">
 
 - **Melisa Caputo**  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/melisa-caputo/)
+  <img align="left" src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/melisa-caputo/"> </a>
+<br clear="all">
 
 ---
 
